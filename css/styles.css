@@ -2259,7 +2259,7 @@ footer {
     #contacto {
         display: grid;
         grid-template-columns: 90%;
-        grid-template-rows: 20% 80%;
+        grid-template-rows: 12% 88%;
         grid-template-areas:
         "titulo"
         "form";
