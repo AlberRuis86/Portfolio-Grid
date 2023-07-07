@@ -195,14 +195,14 @@ footer {
 .sobremi h2 {
     height: 10%;
     width: 100%;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #fff;
 }
 
 .sobremi h3 {
     height: 10%;
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 2rem;
     color: #fff;
 }
 
@@ -215,7 +215,7 @@ footer {
 }
 
 .sobremi a {
-    font-size: 25px;
+    font-size: 1.5rem;
     border: 2px solid #fff;
     border-radius: 50px;
     padding: 20px 25px;
@@ -228,6 +228,7 @@ footer {
 }
 
 .sobremi .descargar:hover {
+    color: #ff5080;
     background-color: #00000075;
     transition: 1ms;
 }
@@ -364,10 +365,11 @@ footer {
 #portfolio .titulo-seccion {
     grid-area: h3;
     color: #ff5080;
-    font-size: 40px;
+    font-size: 2.3rem;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    text-shadow: 2px 2px 3px #ffffff;
 }
 
 #portfolio .fila {
@@ -438,7 +440,8 @@ footer {
     width: 100%;
     height: 100%;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.3rem;
+    text-shadow: 2px 2px 3px #ffffff;
     text-transform: uppercase;
     color: #ff5080;
 } 
@@ -458,6 +461,9 @@ footer {
 }
 
 #contacto .contenedor-form .input-mitad {
+    font-size: 1rem;
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #000000;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 49%;
@@ -467,13 +473,20 @@ footer {
     margin-left: 20px;
 }
 
+
 #contacto .contenedor-form .input-full{
+    font-size: 1rem;
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #000000;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
 }
 
 #contacto .btn-enviar{
+    font-size: 1.2rem;
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #000000;
     display: block;
     margin: auto;
     cursor: pointer;
@@ -484,6 +497,7 @@ footer {
 #contacto .btn-enviar:hover{
     background-color: #ff5080;
     color: #fff;
+    text-shadow: 2px 2px 3px #000000;
 }
 
 /* Seccion Responsive*/
@@ -1763,43 +1777,16 @@ footer {
     
 }
 
-@media (min-width: 425px) {
-    
-}
-
 @media (min-width: 768px) {
+
     .skillsBody {
         background-image: url(../assets/img/Movil/fondo-skills-tablet.jpg);
         background-position: cover;
     }
-    
-    #skills {
-        display: grid;
-        grid-template-rows: repeat(6 1fr);
-        grid-template-areas: 
-        "titulo"
-        "skill1"
-        "skill2"
-        "skill3"
-        "skill4"
-        ".";
-        width: 100%;
-        height: 100vh;
-        margin: 0;
-        align-content: stretch;
-        justify-content: stretch;
-    }
-    
-    #skills h3 {
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        grid-area: titulo;
-    } 
 
     #skills .skillTitulo {
         color: #ff5080;
-        font-size: 2.3rem;
+        font-size: 2rem;
         text-align: center;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -1809,53 +1796,539 @@ footer {
     
     .lista {
         color: #ff5080;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         text-shadow: 1px 1px 2px #ffffff;
     }
     
     .porcentaje {
         color: #ff5080;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         text-shadow: 1px 1px 2px #ffffff;
     }
     
-    #skill1 {
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        grid-area: skill1;
-    }
-    
-    #skill2{
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        grid-area: skill2;
-    }
-    
-    #skill3 {
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        grid-area: skill3;
-    }
-    
-    #skill4 {
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        grid-area: skill4;
-    }
     
 }
 
 @media (min-width: 1024px) {
+
     .skillsBody {
         background-image: url(../assets/img/fondo-skills.jpg);
         background-position: cover;
     }
+
+    #skills .skillTitulo {
+        color: #ff5080;
+        font-size: 2.2rem;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        grid-area: titulo;
+        text-shadow: 1.5px 1.5px 2px #ffffff;
+    } 
+    
+    .lista {
+        color: #ff5080;
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 2px #ffffff;
+    }
+    
+    .porcentaje {
+        color: #ff5080;
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 2px #ffffff;
+    }
+
 }
 
 @media (min-width: 1440px) {
+
+    #skills .skillTitulo {
+        color: #ff5080;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        grid-area: titulo;
+        text-shadow: 1.5px 1.5px 2px #ffffff;
+    } 
     
+    .lista {
+        color: #ff5080;
+        font-size: 1.8rem;
+        text-shadow: 1px 1px 2px #ffffff;
+    }
+    
+    .porcentaje {
+        color: #ff5080;
+        font-size: 1.8rem;
+        text-shadow: 1px 1px 2px #ffffff;
+    }
+}
+
+/* RESPONSIVE */
+
+/* SECCION PORTFOLIO */
+
+@media (min-width: 320px) {
+
+    .portfolioBody {
+        background-image: url(../assets/img/Movil/fonfo-portfolio-movil.jpg);
+        background-position: cover;
+    }
+    
+    #portfolio .titulo-seccion {
+        color: #ff5080;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 20px;
+        text-shadow: 2px 2px 3px #ffffff;
+    }
+
+    
+    #portfolio .fila {
+        display: grid;
+    }
+    
+    #portfolio .proyecto img {
+        width: 80%;
+        height: 80%;
+        filter: grayscale(1);
+        object-fit: cover;
+        transition: .5s;
+    }
+    
+    #portfolio .fila .proyecto .info{
+        text-align: center;
+        position: absolute;
+        left: 0;
+        background-color: rgba(0, 0, 0, .8);
+        color: #ff5080;
+        width: 80%;
+        padding: 10px;
+        opacity: 0;
+        bottom: -20px;
+        transition: .5s;
+    }
+
+}
+
+@media (min-width: 375px) {
+
+    .portfolioBody {
+        background-image: url(../assets/img/Movil/fonfo-portfolio-movil.jpg);
+        background-position: cover;
+    }
+    
+    #portfolio .titulo-seccion {
+        color: #ff5080;
+        font-size: 1.6rem;
+        text-align: center;
+        text-shadow: 2px 2px 3px #ffffff;
+    }
+
+    #portfolio .proyecto img {
+        width: 80%;
+        height: 90%;
+        filter: grayscale(1);
+        object-fit: cover;
+        transition: .5s;
+    }
+
+    #portfolio .fila .proyecto .info{
+        text-align: center;
+        position: absolute;
+        left: 0;
+        background-color: rgba(0, 0, 0, .8);
+        color: #ff5080;
+        width: 80%;
+        padding: 10px;
+        opacity: 0;
+        bottom: -10px;
+        transition: .5s;
+    }
+}
+
+@media (min-width: 425px) {
+
+    .portfolioBody {
+        background-image: url(../assets/img/Movil/fonfo-portfolio-movil.jpg);
+        background-position: cover;
+    }
+    
+    #portfolio .titulo-seccion {
+        color: #ff5080;
+        font-size: 1.7rem;
+        text-align: center;
+        text-shadow: 2px 2px 3px #ffffff;
+    }
+
+    #portfolio .proyecto img {
+        width: 80%;
+        height: 90%;
+        filter: grayscale(1);
+        object-fit: cover;
+        transition: .5s;
+    }
+
+    #portfolio .fila .proyecto .info{
+        text-align: center;
+        position: absolute;
+        left: 0;
+        background-color: rgba(0, 0, 0, .8);
+        color: #ff5080;
+        width: 80%;
+        padding: 10px;
+        opacity: 0;
+        bottom: -10px;
+        transition: .5s;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .portfolioBody {
+        background-image: url(../assets/img/Movil/fondo-portfolio-tablet.jpg);
+        background-position: cover;
+    }
+    
+    #portfolio {
+        display: grid;
+        grid-template-columns: repeat(3 1fr);
+        grid-template-rows: 20% 80%;
+        grid-template-areas: 
+        "h3 h3 h3"
+        "fila fila fila";
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        align-content: stretch;
+        justify-content: stretch;
+    }
+    
+    #portfolio .titulo-seccion {
+        grid-area: h3;
+        color: #ff5080;
+        font-size: 2.3rem;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-shadow: 2px 2px 3px #ffffff;
+    }
+    
+    #portfolio .fila {
+        grid-area: fila;
+        display: flex;
+        padding-left: 50px;
+    }
+    
+    #portfolio .fila .proyecto{
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #portfolio .proyecto img {
+        width: 80%;
+        height: 50%;
+        filter: grayscale(1);
+        object-fit: cover;
+        transition: .5s;
+    }
+    
+    
+    #portfolio .fila .proyecto .info{
+        text-align: center;
+        position: relative;
+        left: 0;
+        background-color: rgba(0, 0, 0, .8);
+        color: #ff5080;
+        width: 80%;
+        padding: 10px;
+        opacity: 0;
+        bottom: -40px;
+        transition: .5s;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .portfolioBody {
+        background-image: url(../assets/img/developer.jpg);
+        background-position: cover;
+    }
+    
+    #portfolio {
+        display: grid;
+        grid-template-columns: repeat(3 1fr);
+        grid-template-rows: 20% 80%;
+        grid-template-areas: 
+        "h3 h3 h3"
+        "fila fila fila";
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        align-content: stretch;
+        justify-content: stretch;
+    }
+    
+    #portfolio .titulo-seccion {
+        grid-area: h3;
+        color: #ff5080;
+        font-size: 2.3rem;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-shadow: 2px 2px 3px #ffffff;
+    }
+    
+    #portfolio .fila {
+        grid-area: fila;
+        display: flex;
+        padding-left: 50px;
+    }
+    
+    #portfolio .fila .proyecto{
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #portfolio .proyecto img {
+        width: 90%;
+        height: 60%;
+        filter: grayscale(1);
+        object-fit: cover;
+        transition: .5s;
+    }
+    
+    
+    #portfolio .fila .proyecto .info{
+        text-align: center;
+        font-size: 1.5rem;
+        position: relative;
+        left: 0;
+        background-color: rgba(0, 0, 0, .8);
+        color: #ff5080;
+        width: 90%;
+        padding: 10px;
+        opacity: 0;
+        bottom: -40px;
+        transition: .5s;
+    }
+
+}
+
+/* RESPONSIVE */
+
+/* SECCION PORTFOLIO */
+
+@media (min-width: 320px) {
+
+    #contacto {
+        display: grid;
+        grid-template-rows: 10% 90%;
+        grid-template-areas: 
+        "titulo"
+        "form";
+        justify-content: center;
+        align-content: center;
+    }
+
+    h3 .titulo-seccion {
+        grid-area: titulo;
+    }
+
+    div .contenedor-form {
+        grid-area: form;
+    }
+    
+    #contacto .titulo-seccion {
+        margin-top: 10px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.4rem;
+        text-shadow: 2px 2px 3px #ffffff;
+        text-transform: uppercase;
+        color: #ff5080;
+    } 
+    
+    #contacto .contenedor-form input,
+    #contacto .contenedor-form textarea{ 
+        border-radius: 10px;
+        border: none;
+        border: 1px solid #919191;
+    }
+    
+    #contacto .contenedor-form .input-mitad {
+        margin-left: 20px;
+        font-size: 0.7rem;
+        color: #000000;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    
+    #contacto .contenedor-form .input-full{
+        margin-left: 20px;
+        font-size: 0.7rem;
+        color: #000000;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    
+    #contacto .btn-enviar{
+        font-size: 0.9rem;
+        color: #000000;
+        cursor: pointer;
+        transition: .5s;
+        padding: 6px 8px;
+    }
+    
+    #contacto .btn-enviar:hover{
+        background-color: #ff5080;
+        color: #fff;
+        text-shadow: 2px 2px 3px #000000;
+    }
+}
+
+@media (min-width: 768px) {
+
+    #contacto {
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 9% auto;
+        grid-template-areas: 
+        "titulo"
+        "form";
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    h3 .titulo-seccion {
+        grid-area: titulo;
+    }
+
+    div .contenedor-form {
+        grid-area: form;
+    }
+    
+    #contacto .titulo-seccion {
+        margin-top: 10px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.6rem;
+        text-shadow: 2px 2px 3px #ffffff;
+        text-transform: uppercase;
+        color: #ff5080;
+    } 
+    
+    #contacto .contenedor-form .input-mitad {
+        font-size: 0.9rem;
+        color: #000000;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    
+    #contacto .contenedor-form .input-full{
+        font-size: 0.9rem;
+        color: #000000;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    
+    #contacto .btn-enviar{
+        font-size: 1rem;
+        color: #000000;
+        cursor: pointer;
+        transition: .5s;
+        padding: 6px 8px;
+    }
+    
+}  
+
+@media (min-width: 1024px) {
+
+    #contacto {
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 20% 80%;
+        grid-template-areas:
+        "titulo"
+        "form";
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    #contacto .titulo-seccion {
+        grid-area: titulo;
+        margin-top: 30px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 2.3rem;
+        text-shadow: 2px 2px 3px #ffffff;
+        text-transform: uppercase;
+        color: #ff5080;
+    } 
+    
+    #contacto .contenedor-form form {
+        grid-area: form;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #contacto .contenedor-form input,
+    #contacto .contenedor-form textarea{ 
+        padding: 20px;
+        border-radius: 20px;
+        border: none;
+        border: 1px solid #919191;
+    }
+    
+    #contacto .contenedor-form .input-mitad {
+        font-size: 1rem;
+        color: #ff5080;
+        text-shadow: 1px 1px 2px #000000;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 31px;
+        width: 47%;
+    }
+    
+    #contacto .contenedor-form .input-full{
+        font-size: 1rem;
+        color: #ff5080;
+        text-shadow: 1px 1px 2px #000000;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    #contacto .btn-enviar{
+        font-size: 1.2rem;
+        color: #ff5080;
+        text-shadow: 1px 1px 2px #000000;
+        display: block;
+        margin: auto;
+        cursor: pointer;
+        transition: .5s;
+        padding: 10px 15px;
+    }
+    
+    #contacto .btn-enviar:hover{
+        background-color: #ff5080;
+        color: #fff;
+        text-shadow: 2px 2px 3px #000000;
+    }
 }
