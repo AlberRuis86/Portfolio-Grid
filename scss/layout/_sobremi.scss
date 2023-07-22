@@ -1,0 +1,475 @@
+// RESPONSIVE
+
+@media (min-width: $mediaMobile-320) {
+
+    .sobreMiBody {
+        background-image: url(../assets/img/movil/fondo-sobremi-movil.webp);
+        background-size: cover;
+
+        .inicio {
+            @include header320;
+        }
+
+        #sobremi {
+            @include display;
+
+            .contenedor-foto {
+                padding-top: 40px;
+                @include contenedorFoto;
+
+                & img {
+                    @include img;
+                }
+            }
+
+            .sobremi {
+                @include sobremi;
+
+                #titulo-seccion{
+                    font-size: 1.4rem;
+                    @include titulo;
+                }
+
+                h2 {
+                    font-size: 1.2rem;
+                    @include h2;
+
+                    & .spanSobremi {
+                        @include span;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.1rem;
+                    @include h3;
+                }
+
+                .descripcionSobreMi {
+                    font-size: 0.7rem;
+                    margin-bottom: 20px;
+                    @include descripcion;
+                }
+
+                .buttonDescargar {
+                    margin-top: 20px;
+
+                    a {
+                        font-size: 1rem;
+                        @include botonDescargarA;
+
+                        .descargar {
+
+                            &:hover {
+                                @include botonDescargarHover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaMobile-375) {
+
+    .sobreMiBody {
+        background-image: url(../assets/img/movil/fondo-sobremi-movil.webp);
+        background-size: cover;
+
+        .inicio {
+            @include header375;
+        }
+
+        #sobremi {
+            @include display;
+
+            .contenedor-foto {
+                @include contenedorFoto;
+
+                & img {
+                    @include img;
+                }
+            }
+
+            .sobremi {
+                @include sobremi;
+
+                #titulo-seccion{
+                    font-size: 1.4rem;
+                    @include titulo;
+                }
+
+                h2 {
+                    font-size: 1.2rem;
+                    @include h2;
+
+                    & .spanSobremi {
+                        text-shadow: 1px 1px 2px #000000;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.1rem;
+                    @include h3;
+                }
+
+                .descripcionSobreMi {
+                    font-size: 0.8rem;
+                    margin-bottom: 20px;
+                    @include descripcion;
+                }
+
+                .buttonDescargar {
+                    margin-top: 20px;
+
+                    a {
+                        font-size: 1.1rem;
+                        @include botonDescargarA;
+
+                        .descargar {
+
+                            &:hover {
+                                @include botonDescargarHover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaTablet-576) {
+
+    .sobreMiBody {
+        background-image: url(../assets/img/movil/fondo-sobremi-movil.webp);
+        background-size: cover;
+
+        .inicio {
+            @include header576;
+        }
+
+        #sobremi {
+            @include display;
+
+            .contenedor-foto {
+                padding-top: 0px;
+                @include contenedorFoto;
+
+                & img {
+                    margin-top: 40px;
+                    @include imgTablet;
+                }
+            }
+
+            .sobremi {
+                @include sobremi;
+
+                #titulo-seccion{
+                    font-size: 1.6rem;
+                    @include titulo;
+                }
+
+                h2 {
+                    font-size: 1.4rem;
+                    @include h2;
+
+                    & .spanSobremi {
+                        text-shadow: 1px 1px 2px #000000;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.3rem;
+                    @include h3;
+                }
+
+                .descripcionSobreMi {
+                    font-size: 1rem;
+                    margin-bottom: 20px;
+                    @include descripcion;
+                }
+
+                .buttonDescargar {
+                    margin-top: 10px;
+
+                    a {
+                        font-size: 1.1rem;
+                        @include botonDescargarA;
+
+                        .descargar {
+                            &:hover {
+                                @include botonDescargarHover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaTablet-768) {
+
+    .sobreMiBody {
+        background-image: url(../assets/img/movil/fondo-sobremi-movil.webp);
+        background-size: cover;
+
+        .inicio {
+            @include header768;
+        }
+
+        #sobremi {
+            @include display;
+
+            .contenedor-foto {
+                @include contenedorFoto;
+
+                & img {
+                    @include imgTablet;
+                }
+            }
+
+            .sobremi {
+                @include sobremi;
+
+                #titulo-seccion{
+                    font-size: 1.6rem;
+                    margin-bottom: 0px;
+                    @include titulo;
+                }
+
+                h2 {
+                    font-size: 1.4rem;
+                    margin-bottom: 0px;
+                    @include h2;
+
+                    & .spanSobremi {
+                        text-shadow: 1px 1px 2px #000000;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.3rem;
+                    margin-top: 5px;
+                    margin-bottom: 0px;
+                    @include h3;
+                }
+
+                .descripcionSobreMi {
+                    font-size: 1rem;
+                    margin-bottom: 1px;
+                    @include descripcion;
+                }
+
+                .buttonDescargar {
+                    margin-top: 20px;
+                    a {
+                        font-size: 1.1rem;
+                        @include botonDescargarA;
+
+                        .descargar {
+                            &:hover {
+                                @include botonDescargarHover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaDesktop-992) {
+    .sobreMiBody {
+        background-image: url(../assets/img/pxfuel.webp);
+        background-size: cover;
+
+        .inicio {
+            @include header992;
+        }
+
+        #sobremi {
+            @include display;
+
+            .contenedor-foto {
+                @include contenedorFoto;
+
+                & img {
+                    @include imgDesktop;
+                }
+            }
+
+            .sobremi {
+                @include sobremi;
+
+                #titulo-seccion{
+                    font-size: 1.8rem;
+                    @include titulo;
+                }
+
+                h2 {
+                    font-size: 1.6rem;
+                    @include h2;
+
+                    & .spanSobremi {
+                        text-shadow: 1px 1px 2px #000000;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    @include h3;
+                }
+
+                .descripcionSobreMi {
+                    font-size: 1.2rem;
+                    @include descripcion;
+                }
+
+                .buttonDescargar {
+                    margin-top: 10px;
+
+                    a {
+                        font-size: 1.3rem;
+                        @include botonDescargarA;
+
+                        .descargar {
+                            &:hover {
+                                @include botonDescargarHover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaDesktop-1200) {
+    .sobreMiBody {
+        background-image: url(../assets/img/pxfuel.webp);
+        background-size: cover;
+
+        .inicio {
+            @include header1200;
+        }
+
+        #sobremi {
+            @include display;
+
+            .contenedor-foto {
+                @include contenedorFoto;
+
+                & img {
+                    @include imgDesktop;
+                }
+            }
+
+            .sobremi {
+                @include sobremi;
+
+                #titulo-seccion{
+                    font-size: 2rem;
+                    @include titulo;
+                }
+
+                h2 {
+                    font-size: 1.8rem;
+                    @include h2;
+
+                    & .spanSobremi {
+                        text-shadow: 1px 1px 2px #000000;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.7rem;
+                    @include h3;
+                }
+
+                .descripcionSobreMi {
+                    font-size: 1.4rem;
+                    margin-bottom: 5px;
+                    @include descripcion;
+                }
+
+                .buttonDescargar {
+                    margin-top: 5px;
+
+                    a {
+                        font-size: 1.6rem;
+                        @include botonDescargarA;
+
+                        .descargar {
+                            &:hover {
+                                @include botonDescargarHover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaDesktop-1400) {
+    .sobreMiBody {
+        background-image: url(../assets/img/pxfuel.webp);
+        background-size: cover;
+
+        .inicio {
+            @include header1200;
+        }
+
+        #sobremi {
+            @include display;
+
+            .contenedor-foto {
+                @include contenedorFoto;
+
+                & img {
+                    @include imgDesktop;
+                }
+            }
+
+            .sobremi {
+                @include sobremi;
+
+                #titulo-seccion{
+                    font-size: 2.2rem;
+                    @include titulo;
+                }
+
+                h2 {
+                    font-size: 2rem;
+                    @include h2;
+
+                    & .spanSobremi {
+                        text-shadow: 1px 1px 2px #000000;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.9rem;
+                    @include h3;
+                }
+
+                .descripcionSobreMi {
+                    font-size: 1.6rem;
+                    margin-bottom: 5px;
+                    @include descripcion;
+                }
+
+                .buttonDescargar {
+                    margin-top: 5px;
+
+                    a {
+                        font-size: 1.8rem;
+                        @include botonDescargarA;
+
+                        .descargar {
+                            &:hover {
+                                @include botonDescargarHover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

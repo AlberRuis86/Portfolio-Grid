@@ -1,0 +1,458 @@
+#gridInicio {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "inicio"
+    "presentacion"
+    "footer";
+    row-gap: 0px;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    align-content: stretch;
+    background-image: url(../assets/img/fondo-inicio.webp);
+    background-size: cover;
+
+    .inicio {
+        padding-top: 24px;
+        grid-area: inicio;
+        background-color: $secondary-color;
+        height: 100%;
+
+        .contenido-header {
+            display: flex;
+            justify-content: space-between;
+            color: $primary-color;
+
+            h1 {
+                font-size: 1.2rem;
+                padding-left: 20px;
+            }
+
+            #links {
+                list-style-type: none;
+                display: flex;
+                font-size: 1.2rem;
+                padding-right: 20px;
+                padding-left: 20px;
+                text-decoration: none;
+            
+                a {
+                    padding-right: 15px;
+                    color: #fff;
+                    text-decoration: none;
+            
+                    &:hover {
+                        color: $primary-color;
+                        text-shadow: 1px 1px 2px #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+#presentacion {
+    grid-area: presentacion;
+
+    .presentacion {
+        color: #fff;
+        width: 100%;
+        height: 100%;
+
+        .bienvenida {
+            color: $primary-color;
+            text-align: center;
+            font-size: 4rem;
+            font-weight: bolder;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-shadow: 6px 6px 8px #000000;  
+        }
+
+        h2 {
+            font-size: 2.6rem;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            span {
+                color: $primary-color;
+                font-weight: bolder;
+                text-shadow: 6px 6px 8px #000000;
+            }
+        }
+
+        .descripcion {
+            font-size: 2rem;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        .button {
+            padding-top: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+
+            .button-portfolio {
+                background-color: #ff507f79;
+                color: #fff;
+                text-decoration: none;
+                font-size: 2.8rem;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
+                border: 2px solid #fff;
+                border-radius: 50px;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-shadow: 1px 1px 2px #000000;
+
+                &:hover {
+                    background-color: #00000079;
+                    transition: 1ms;
+                    color: $primary-color;
+                    text-shadow: 1px 1px 2px #fff;
+                }
+            }
+        }
+        
+    }
+}
+@media (min-width: $mediaMobile-320) {
+    
+    #gridInicio {
+        background-image: url(../assets/img/movil/fondo-inicio-movil.webp);
+        grid-template-rows: 7% auto auto;
+        @include displayInicio;
+
+        .inicio {
+            @include header320;
+        }
+
+        #presentacion {
+            grid-area: presentacion;
+
+            .presentacion {
+                @include presentacion;
+
+                .bienvenida {
+                    font-size: 1.3rem;
+                    @include bienvenida;  
+                }
+
+                h2 {
+                    font-size: 1rem;
+                    @include h2Inicio;
+                }
+            
+                span {
+                    @include spanInicio;
+                }
+
+                .descripcion {
+                    font-size: 0.8rem;
+                    @include descripcion;
+                }
+                
+                .button {
+                    @include botonInicio;
+
+                    .button-portfolio {
+                        font-size: 1rem;
+                        @include botonPortfolio;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+@media (min-width: $mediaMobile-375) {
+
+    #gridInicio {
+
+        .inicio {
+            @include header375;
+        }
+
+        #presentacion {
+            grid-area: presentacion;
+
+            .presentacion {
+                @include presentacion;
+
+                .bienvenida {
+                    font-size: 1.3rem;
+                    @include bienvenida;
+                }
+
+                h2 {
+                    font-size: 1.1rem;
+                    @include h2Inicio;
+                }
+
+                span {
+                    @include spanInicio;
+                }
+
+                .descripcion {
+                    font-size: 0.9rem;
+                    @include descripcion;
+                }
+
+                .button {
+                    @include botonInicio;
+
+                    .button-portfolio {
+                        font-size: 1.1rem;
+                        @include botonPortfolio;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaTablet-576) {
+    
+    #gridInicio {
+        background-image: url(../assets/img/fondo-inicio.webp);
+        grid-template-rows: auto auto auto;
+        @include displayInicio;
+
+        .inicio {
+            @include header576;
+        }
+
+        #presentacion {
+            grid-area: presentacion;
+
+            .presentacion {
+                @include presentacion;
+
+                .bienvenida {
+                    font-size: 1.5rem;
+                    @include bienvenida;
+                }
+
+                h2 {
+                    font-size: 1.3rem;
+                    @include h2Inicio;
+                }
+
+                span {
+                    @include spanInicio;
+                }
+
+                .descripcion {
+                    font-size: 1rem;
+                    @include descripcion;
+                }
+
+                .button {
+                    @include botonInicio;
+
+                    .button-portfolio {
+                        font-size: 1.1rem;
+                        @include botonPortfolio;
+                    }
+                }
+            }
+        }
+    }
+}    
+@media (min-width: $mediaTablet-768) {
+
+    #gridInicio {
+        background-image: url(../assets/img/fondo-inicio.webp);
+        grid-template-rows: auto auto auto;
+        @include displayInicio;
+
+        .inicio {
+            @include header768;
+        }
+
+        #presentacion {
+            grid-area: presentacion;
+
+            .presentacion {
+                @include presentacion;
+
+                .bienvenida {
+                    font-size: 2rem;
+                    @include bienvenida;
+                }
+
+                h2 {
+                    font-size: 1.6rem;
+                    @include h2Inicio;
+                }
+
+                span {
+                    @include spanInicio;
+                }
+
+                .descripcion {
+                    font-size: 1.2rem;
+                    @include descripcion;
+                }
+
+                .button {
+                    @include botonInicio;
+
+                    .button-portfolio {
+                        font-size: 1.3rem;
+                        @include botonPortfolio;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaDesktop-992) {
+
+    #gridInicio {
+        background-image: url(../assets/img/fondo-inicio.webp);
+        grid-template-rows: auto auto auto;
+        @include displayInicio;
+
+        .inicio {
+            @include header992;
+        }
+
+        #presentacion {
+            grid-area: presentacion;
+
+            .presentacion {
+                @include presentacion;
+
+                .bienvenida {
+                    font-size: 2.5rem;
+                    @include bienvenida;
+                }
+
+                h2 {
+                    font-size: 2rem;
+                    @include h2Inicio;
+                }
+
+                span {
+                    @include spanInicio;
+                }
+
+                .descripcion {
+                    font-size: 1.8rem;
+                    @include descripcionInicio;
+                }
+
+                .button {
+                    @include botonInicio;
+
+                    .button-portfolio {
+                        font-size: 1.8rem;
+                        @include botonPortfolio;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaDesktop-1200) {
+
+    #gridInicio {
+        background-image: url(../assets/img/fondo-inicio.webp);
+        grid-template-rows: auto auto auto;
+        @include displayInicio;
+
+        .inicio {
+            @include header1200;
+        }
+
+        #presentacion {
+            grid-area: presentacion;
+
+            .presentacion {
+                @include presentacion;
+
+                .bienvenida {
+                    font-size: 2.5rem;
+                    @include bienvenida;
+                }
+
+                h2 {
+                    font-size: 2rem;
+                    @include h2Inicio;
+                }
+
+                span {
+                    @include spanInicio;
+                }
+
+                .descripcion {
+                    font-size: 1.8rem;
+                    @include descripcionInicio;
+                }
+
+                .button {
+                    @include botonInicio;
+
+                    .button-portfolio {
+                        font-size: 1.8rem;
+                        @include botonPortfolio;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaDesktop-1400) {
+
+    #gridInicio {
+        background-image: url(../assets/img/fondo-inicio.webp);
+        grid-template-rows: auto auto auto;
+        @include displayInicio;
+
+        .inicio {
+            @include header1200;
+        }
+
+        #presentacion {
+            grid-area: presentacion;
+
+            .presentacion {
+                @include presentacion;
+
+                .bienvenida {
+                    font-size: 3rem;
+                    @include bienvenida;
+                }
+
+                h2 {
+                    font-size: 2.5rem;
+                    @include h2Inicio;
+                }
+
+                span {
+                    @include spanInicio;
+                }
+
+                .descripcion {
+                    font-size: 2rem;
+                    @include descripcionInicio;
+                }
+
+                .button {
+                    @include botonInicio;
+
+                    .button-portfolio {
+                        font-size: 2.5rem;
+                        @include botonPortfolio;
+                    }
+                }
+            }
+        }
+    }
+}

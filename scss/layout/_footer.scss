@@ -1,0 +1,140 @@
+footer {
+    @include footerDisplay;
+
+    p {
+        font-size: 1.2rem;
+        @include footerP;
+    }
+
+    .redes {
+        font-size: 1.3rem;
+        @include footerRedes;
+
+        a { 
+            @include footerA;
+        }
+    }
+}
+
+@media (min-width: $mediaMobile-320) {
+
+    footer {
+        @include footerDisplay;
+    
+        p {
+            font-size: 0.6rem;
+            @include footerP;
+        }
+    
+        .redes {
+            font-size: 0.8rem;
+            @include footerRedes;
+    
+            a { 
+                @include footerA;
+            }
+        }
+    }
+
+}
+
+@media (min-width: $mediaTablet-576) {
+
+    footer {
+        @include footerDisplay;
+    
+        p {
+            font-size: 0.9rem;
+            @include footerP;
+        }
+    
+        .redes {
+            font-size: 1rem;
+            @include footerRedes;
+    
+            a { 
+                @include footerA;
+            }
+        }
+    }
+}
+
+@media (min-width: $mediaTablet-768) {
+    footer {
+        @include footerDisplay;
+    
+        p {
+            font-size: 1rem;
+            @include footerP;
+        }
+    
+        .redes {
+            font-size: 1.1rem;
+            @include footerRedes;
+    
+            a { 
+                @include footerA;
+            }
+        }
+    }
+}
+
+@media (min-width: $mediaDesktop-992) {
+    footer {
+        @include footerDisplay;
+    
+        p {
+            font-size: 1.1rem;
+            @include footerP;
+        }
+    
+        .redes {
+            font-size: 1.2rem;
+            @include footerRedes;
+    
+            a { 
+                @include footerA;
+            }
+        }
+    }
+}
+
+@media (min-width: $mediaDesktop-1200) {
+    footer {
+        @include footerDisplay;
+    
+        p {
+            font-size: 1.2rem;
+            @include footerP;
+        }
+    
+        .redes {
+            font-size: 1.3rem;
+            @include footerRedes;
+    
+            a { 
+                @include footerA;
+            }
+        }
+    }
+}
+
+@media (min-width: $mediaDesktop-1400) {
+    footer {
+        @include footerDisplay;
+    
+        p {
+            font-size: 1.3rem;
+            @include footerP;
+        }
+    
+        .redes {
+            font-size: 1.4rem;
+            @include footerRedes;
+    
+            a { 
+                @include footerA;
+            }
+        }
+    }
+}
