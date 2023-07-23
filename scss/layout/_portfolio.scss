@@ -1,108 +1,334 @@
-.inicio {
-    padding-top: 24px;
-    grid-area: inicio;
-    background-color: $secondary-color;
-    height: 100%;
+.portfolioBody {
+    background-image: url(../assets/img/developer.webp);
+    background-position: cover;
 
-    .contenido-header {
-        display: flex;
-        justify-content: space-between;
-        color: $primary-color;
+    @include header1200;
 
-        h1 {
-            font-size: 1.2rem;
-            padding-left: 20px;
+    #portfolio {
+        @include displayPortfolio;
+    
+        .titulo-seccion {
+            @include tituloPortfolio(2.8rem);
         }
+    
+        .fila {
+            @include filaPortfolio;
+    
+            .proyecto{
+                @include proyectoPortfolio;
+    
+                img {
+                    @include imgPortfolio(90%, 60%);
+                }
 
-        #links {
-            list-style-type: none;
-            display: flex;
-            font-size: 1.2rem;
-            padding-right: 20px;
-            padding-left: 20px;
-            text-decoration: none;
-        
-            a {
-                padding-right: 15px;
-                color: #fff;
-                text-decoration: none;
-        
-                &:hover {
-                    color: $primary-color;
-                    text-shadow: 1px 1px 2px #fff;
+                &:hover img{
+                    filter: grayscale(0);
+               }
+    
+                .info{
+                    @include infoPortfolio(90%);
+                }
+
+                &:hover .info{
+                    opacity: 1;
+                    bottom: 0;
                 }
             }
         }
     }
 }
-
-.portfolioBody {
-    background-image: url(../assets/img/developer.jpg);
-    background-position: cover;
-}
-
-#portfolio {
-    display: grid;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-rows: 20% 80% 20%;
-    grid-template-areas: 
-    "h3 h3 h3"
-    "fila fila fila"
-    ". . .";
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    align-content: stretch;
-    justify-content: stretch;
-
-    & .titulo-seccion {
-        grid-area: h3;
-        color: $primary-color;
-        font-size: 2.8rem;
-        font-weight: bolder;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        text-shadow: 2px 2px 3px #ffffff;
+// SECCION RESPONSIVE
+@media (min-width: $mediaMobile-320) {
+    .portfolioBody {
+        background-image: url(../assets/img/movil/fondo-portfolio-tablet.webp);
+        background-position: cover;
+    
+        @include header320;
+    
+        #portfolio {
+            @include displayPortfolio;
+        
+            .titulo-seccion {
+                @include tituloPortfolio(1.6rem);
+            }
+        
+            .fila {
+                @include filaPortfolio;
+                margin-right: 10px;
+                padding-left: 10px;
+        
+                .proyecto{
+                    @include proyectoPortfolio;
+        
+                    img {
+                        margin-right: 0;
+                        padding-left: 0;
+                        @include imgPortfolio(90%, 40%);
+                    }
+    
+                    &:hover img{
+                        filter: grayscale(0);
+                   }
+        
+                    .info{
+                        @include infoPortfolio(90%);
+                    }
+    
+                    &:hover .info{
+                        opacity: 1;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
     }
-
-    & .fila {
-        grid-area: fila;
-        display: flex;
-        padding-left: 50px;
-
-        & .proyecto{
-            display: inline-block;
-            position: relative;
-            overflow: hidden;
-
-            & img {
-                width: 90%;
-                height: 60%;
-                filter: grayscale(1);
-                object-fit: cover;
-                transition: .5s;
+}
+@media (min-width: $mediaMobile-375) {
+    .portfolioBody {
+        background-image: url(../assets/img/movil/fondo-portfolio-tablet.webp);
+        background-position: cover;
+    
+        @include header375;
+    
+        #portfolio {
+            @include displayPortfolio;
+        
+            .titulo-seccion {
+                @include tituloPortfolio(1.8rem);
             }
-
-            &:hover img{
-                 filter: grayscale(0);
+        
+            .fila {
+                @include filaPortfolio;
+                margin-right: 10px;
+                padding-left: 10px;
+        
+                .proyecto{
+                    @include proyectoPortfolio;
+        
+                    img {
+                        margin-right: 0;
+                        padding-left: 0;
+                        @include imgPortfolio(90%, 40%);
+                    }
+    
+                    &:hover img{
+                        filter: grayscale(0);
+                   }
+        
+                    .info{
+                        @include infoPortfolio(90%);
+                    }
+    
+                    &:hover .info{
+                        opacity: 1;
+                        bottom: 0;
+                    }
+                }
             }
-
-            & .info{
-                position: relative;
-                left: 0;
-                background-color: rgba(0, 0, 0, .8);
-                color: $primary-color;
-                width: 90%;
-                padding: 10px;
-                opacity: 0;
-                bottom: -40px;
-                transition: .5s;
+        }
+    }
+}
+@media (min-width: $mediaTablet-576) {
+    .portfolioBody {
+        background-image: url(../assets/img/movil/fondo-portfolio-tablet.webp);
+        background-position: cover;
+    
+        @include header576;
+    
+        #portfolio {
+            @include displayPortfolio;
+        
+            .titulo-seccion {
+                @include tituloPortfolio(2rem);
             }
-
-            &:hover .info{
-                opacity: 1;
-                bottom: 0;
+        
+            .fila {
+                @include filaPortfolio;
+        
+                .proyecto{
+                    @include proyectoPortfolio;
+        
+                    img {
+                        @include imgPortfolio(80%, 40%);
+                    }
+    
+                    &:hover img{
+                        filter: grayscale(0);
+                   }
+        
+                    .info{
+                        @include infoPortfolio(80%);
+                    }
+    
+                    &:hover .info{
+                        opacity: 1;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaTablet-768) {
+    .portfolioBody {
+        background-image: url(../assets/img/developer.webp);
+        background-position: cover;
+    
+        @include header768;
+    
+        #portfolio {
+            @include displayPortfolio;
+        
+            .titulo-seccion {
+                @include tituloPortfolio(2.2rem);
+            }
+        
+            .fila {
+                @include filaPortfolio;
+        
+                .proyecto{
+                    @include proyectoPortfolio;
+        
+                    img {
+                        @include imgPortfolio(90%, 50%);
+                    }
+    
+                    &:hover img{
+                        filter: grayscale(0);
+                   }
+        
+                    .info{
+                        @include infoPortfolio(90%);
+                    }
+    
+                    &:hover .info{
+                        opacity: 1;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaDesktop-992) {
+    .portfolioBody {
+        background-image: url(../assets/img/developer.webp);
+        background-position: cover;
+    
+        @include header992;
+    
+        #portfolio {
+            @include displayPortfolio;
+        
+            .titulo-seccion {
+                @include tituloPortfolio(2.6rem);
+            }
+        
+            .fila {
+                @include filaPortfolio;
+        
+                .proyecto{
+                    @include proyectoPortfolio;
+        
+                    img {
+                        @include imgPortfolio(90%, 60%);
+                    }
+    
+                    &:hover img{
+                        filter: grayscale(0);
+                   }
+        
+                    .info{
+                        @include infoPortfolio(90%);
+                    }
+    
+                    &:hover .info{
+                        opacity: 1;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaDesktop-1200) {
+    .portfolioBody {
+        background-image: url(../assets/img/developer.webp);
+        background-position: cover;
+    
+        @include header1200;
+    
+        #portfolio {
+            @include displayPortfolio;
+        
+            .titulo-seccion {
+                @include tituloPortfolio(2.8rem);
+            }
+        
+            .fila {
+                @include filaPortfolio;
+        
+                .proyecto{
+                    @include proyectoPortfolio;
+        
+                    img {
+                        @include imgPortfolio(90%, 60%);
+                    }
+    
+                    &:hover img{
+                        filter: grayscale(0);
+                   }
+        
+                    .info{
+                        @include infoPortfolio(90%);
+                    }
+    
+                    &:hover .info{
+                        opacity: 1;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaDesktop-1400) {
+    .portfolioBody {
+        background-image: url(../assets/img/developer.webp);
+        background-position: cover;
+    
+        @include header1200;
+    
+        #portfolio {
+            @include displayPortfolio;
+        
+            .titulo-seccion {
+                @include tituloPortfolio(3rem);
+            }
+        
+            .fila {
+                @include filaPortfolio;
+        
+                .proyecto{
+                    @include proyectoPortfolio;
+        
+                    img {
+                        @include imgPortfolio(90%, 60%);
+                    }
+    
+                    &:hover img{
+                        filter: grayscale(0);
+                   }
+        
+                    .info{
+                        @include infoPortfolio(90%);
+                    }
+    
+                    &:hover .info{
+                        opacity: 1;
+                        bottom: 0;
+                    }
+                }
             }
         }
     }

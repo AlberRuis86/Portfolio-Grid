@@ -1,126 +1,367 @@
-.inicio {
-    padding-top: 24px;
-    grid-area: inicio;
-    background-color: $secondary-color;
-    height: 100%;
+.contactoBody {
+    background-image: url(../assets/img/fondo-contacto.webp);
+    background-position: cover;
 
-    .contenido-header {
-        display: flex;
-        justify-content: space-between;
-        color: $primary-color;
+    @include header1200;
 
-        h1 {
-            font-size: 1.2rem;
-            padding-left: 20px;
+    #contacto {
+        @include displayContacto;
+
+        .titulo-seccion {
+            @include tituloContacto(2.8rem);
         }
 
-        #links {
-            list-style-type: none;
-            display: flex;
-            font-size: 1.2rem;
-            padding-right: 20px;
-            padding-left: 20px;
-            text-decoration: none;
-        
-            a {
-                padding-right: 15px;
-                color: #fff;
-                text-decoration: none;
-        
+        .contenedor-form {
+            @include form;
+            
+            input,
+            textarea {
+                @include inputTextArea;
+            }
+
+            .input-mitad {
+                @include inputMitadClass(1rem);
+            }
+
+            #input-mitad2 {
+                margin-left: 20px;
+            }
+
+            .input-full {
+                @include inputFull(1rem);
+            }
+
+            .btn-enviar {
+                @include botonContacto(1.2rem);
+
                 &:hover {
-                    color: $primary-color;
-                    text-shadow: 1px 1px 2px #fff;
+                    @include botonHoverContacto;
                 }
             }
         }
     }
 }
 
-.contactoBody {
-    background-image: url(../assets/img/fondo-contacto.jpg);
-    background-position: cover;
-}
-
-#contacto {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 20% 80%;
-    grid-template-areas:
-    "titulo"
-    "form";
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    align-content: stretch;
-    justify-content: stretch;
-
-    .titulo-seccion {
-        grid-area: titulo;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        font-size: 2.8rem;
-        font-weight: bolder;
-        text-shadow: 2px 2px 3px #ffffff;
-        text-transform: uppercase;
-        color: $primary-color;
-    } 
-
-        .contenedor-form form {
-            grid-area: form;
-            width: 100%;
-            height: 100%;
+// RESPONSIVE
+@media (min-width: $mediaMobile-320) {
+    .contactoBody {
+        background-image: url(../assets/img/fondo-contacto.webp);
+        background-position: cover;
     
-            & input,
-            textarea {
-                background-color: #ffffffc9;
-                padding: 10px;
-                border-radius: 20px;
-                border: none;
-                border: 1px solid $primary-color;
+        @include header320;
+    
+        #contacto {
+            @include displayContacto;
+    
+            .titulo-seccion {
+                @include tituloContacto(1.2rem);
             }
-
-            & .input-mitad {
-                font-size: 1rem;
-                color: $primary-color;
-                text-shadow: 1px 1px 2px #000000;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                width: 49%;
-            }
-
-            & #input-mitad2 {
-                margin-left: 20px;
-            }
-
-            & .input-full{
-                font-size: 1rem;
-                color: $primary-color;
-                text-shadow: 1px 1px 2px #000000;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                width: 100%;
-            }
-
-            & .btn-enviar{
-                font-size: 1.2rem;
-                color: $primary-color;
-                border-color: $primary-color;
-                text-shadow: 1px 1px 2px #000000;
-                display: block;
-                margin: auto;
-                cursor: pointer;
-                transition: .1s;
-                padding: 10px 15px;
-
-                &:hover{
-                    background-color: $primary-color;
-                    color: #fff;
-                    border-color: #fff;
-                    text-shadow: 2px 2px 3px #000000;
+    
+            .contenedor-form {
+                @include form;
+                
+                input,
+                textarea {
+                    @include inputTextArea;
+                }
+    
+                .input-mitad {
+                    width: 45%;
+                    @include inputMitadClass(0.3rem);
+                }
+    
+                #input-mitad2 {
+                    margin-left: 20px;
+                }
+    
+                .input-full {
+                    @include inputFull(0.3rem);
+                }
+    
+                .btn-enviar {
+                    @include botonContacto(0.6rem);
+    
+                    &:hover {
+                        @include botonHoverContacto;
+                    }
                 }
             }
         }
+    }
+}
+@media (min-width: $mediaMobile-375) {
+    .contactoBody {
+        background-image: url(../assets/img/fondo-contacto.webp);
+        background-position: cover;
+    
+        @include header375;
+    
+        #contacto {
+            @include displayContacto;
+    
+            .titulo-seccion {
+                @include tituloContacto(1.4rem);
+            }
+    
+            .contenedor-form {
+                @include form;
+                
+                input,
+                textarea {
+                    @include inputTextArea;
+                }
+    
+                .input-mitad {
+                    width: 45%;
+                    @include inputMitadClass(0.4rem);
+                }
+    
+                #input-mitad2 {
+                    margin-left: 20px;
+                }
+    
+                .input-full {
+                    @include inputFull(0.4rem);
+                }
+    
+                .btn-enviar {
+                    @include botonContacto(0.8rem);
+    
+                    &:hover {
+                        @include botonHoverContacto;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaTablet-576) {
+    .contactoBody {
+        background-image: url(../assets/img/fondo-contacto.webp);
+        background-position: cover;
+    
+        @include header576;
+    
+        #contacto {
+            @include displayContacto;
+    
+            .titulo-seccion {
+                @include tituloContacto(1.6rem);
+            }
+    
+            .contenedor-form {
+                @include form;
+                
+                input,
+                textarea {
+                    @include inputTextArea;
+                }
+    
+                .input-mitad {
+                    width: 45%;
+                    @include inputMitadClass(0.6rem);
+                }
+    
+                #input-mitad2 {
+                    margin-left: 20px;
+                }
+    
+                .input-full {
+                    @include inputFull(0.6rem);
+                }
+    
+                .btn-enviar {
+                    @include botonContacto(1rem);
+    
+                    &:hover {
+                        @include botonHoverContacto;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaTablet-768) {
+    .contactoBody {
+        background-image: url(../assets/img/fondo-contacto.webp);
+        background-position: cover;
+    
+        @include header768;
+    
+        #contacto {
+            @include displayContacto;
+    
+            .titulo-seccion {
+                @include tituloContacto(1.8rem);
+            }
+    
+            .contenedor-form {
+                @include form;
+                
+                input,
+                textarea {
+                    @include inputTextArea;
+                }
+    
+                .input-mitad {
+                    width: 45%;
+                    @include inputMitadClass(0.6rem);
+                }
+    
+                #input-mitad2 {
+                    margin-left: 20px;
+                }
+    
+                .input-full {
+                    @include inputFull(0.6rem);
+                }
+    
+                .btn-enviar {
+                    @include botonContacto(1rem);
+    
+                    &:hover {
+                        @include botonHoverContacto;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaDesktop-992) {
+    .contactoBody {
+        background-image: url(../assets/img/fondo-contacto.webp);
+        background-position: cover;
+    
+        @include header992;
+    
+        #contacto {
+            @include displayContacto;
+    
+            .titulo-seccion {
+                @include tituloContacto(2.2rem);
+            }
+    
+            .contenedor-form {
+                @include form;
+                
+                input,
+                textarea {
+                    @include inputTextArea;
+                }
+    
+                .input-mitad {
+                    width: 45%;
+                    @include inputMitadClass(0.8rem);
+                }
+    
+                #input-mitad2 {
+                    margin-left: 20px;
+                }
+    
+                .input-full {
+                    @include inputFull(0.8rem);
+                }
+    
+                .btn-enviar {
+                    @include botonContacto(1.2rem);
+    
+                    &:hover {
+                        @include botonHoverContacto;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaDesktop-1200) {
+    .contactoBody {
+        background-image: url(../assets/img/fondo-contacto.webp);
+        background-position: cover;
+    
+        @include header1200;
+    
+        #contacto {
+            @include displayContacto;
+    
+            .titulo-seccion {
+                @include tituloContacto(2.6rem);
+            }
+    
+            .contenedor-form {
+                @include form;
+                
+                input,
+                textarea {
+                    @include inputTextArea;
+                }
+    
+                .input-mitad {
+                    width: 49%;
+                    @include inputMitadClass(1rem);
+                }
+    
+                #input-mitad2 {
+                    margin-left: 20px;
+                }
+    
+                .input-full {
+                    @include inputFull(1rem);
+                }
+    
+                .btn-enviar {
+                    @include botonContacto(1.2rem);
+    
+                    &:hover {
+                        @include botonHoverContacto;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaDesktop-1400) {
+    .contactoBody {
+        background-image: url(../assets/img/fondo-contacto.webp);
+        background-position: cover;
+    
+        @include header1200;
+    
+        #contacto {
+            @include displayContacto;
+    
+            .titulo-seccion {
+                @include tituloContacto(3rem);
+            }
+    
+            .contenedor-form {
+                @include form;
+                
+                input,
+                textarea {
+                    @include inputTextArea;
+                }
+    
+                .input-mitad {
+                    width: 49%;
+                    @include inputMitadClass(1rem);
+                }
+    
+                #input-mitad2 {
+                    margin-left: 20px;
+                }
+    
+                .input-full {
+                    @include inputFull(1rem);
+                }
+    
+                .btn-enviar {
+                    @include botonContacto(2rem);
+    
+                    &:hover {
+                        @include botonHoverContacto;
+                    }
+                }
+            }
+        }
+    }
 }

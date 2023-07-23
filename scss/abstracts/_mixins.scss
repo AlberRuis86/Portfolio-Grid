@@ -1,207 +1,234 @@
 // HEADER
 @mixin header320 {
-    padding-top: 10px;
-    grid-area: inicio;
-    background-color: $secondary-color;
-    height: 100%;
+    .inicio {
+        padding-top: 10px;
+        grid-area: inicio;
+        background-color: $secondary-color;
+        height: 100%;
 
-    .contenido-header {
-        display: flex;
-        color: $primary-color;
-
-        h1 {
-            font-size: 0.7rem;
-            padding-left: 8px;
-            margin-right: 10px;
-        }
-
-        #links {
-            width: 100%;
-            list-style-type: none;
+        .contenido-header {
             display: flex;
-            padding-left: 8px;
-            padding-right: 8px;
-            margin-right: 1px;
-            font-size: 0.6rem;
-            text-decoration: none;
+            justify-content: space-between;
+            color: $primary-color;
 
-            a:hover {
-                color: $primary-color;
-                text-shadow: 1px 1px 2px #fff;
+            h1 {
+                font-size: 0.7rem;
+                padding-left: 20px;
+            }
+
+            #links {
+                list-style-type: none;
+                display: flex;
+                font-size: 0.7rem;
+                padding-right: 20px;
+                padding-left: 20px;
+                text-decoration: none;
+            
+                a {
+                    padding-right: 15px;
+                    color: #fff;
+                    text-decoration: none;
+            
+                    &:hover {
+                        color: $primary-color;
+                        text-shadow: 1px 1px 2px #fff;
+                    }
+                }
             }
         }
     }
 }
 @mixin header375 {
-    padding-top: 10px;
-    grid-area: inicio;
-    background-color: $secondary-color;
-    height: 100%;
+    .inicio {
+        padding-top: 10px;
+        grid-area: inicio;
+        background-color: $secondary-color;
+        height: 100%;
 
-    .contenido-header {
-        display: flex;
-        color: $primary-color;
-
-        h1 {
-            font-size: 0.7rem;
-            padding-left: 8px;
-            margin-right: 10px;
-        }
-
-        #links {
-            color: #fff;
-            width: 100%;
-            list-style-type: none;
+        .contenido-header {
             display: flex;
-            padding-left: 8px;
-            padding-right: 8px;
-            margin-right: 1px;
-            font-size: 0.6rem;
-            text-decoration: none;
+            justify-content: space-between;
+            color: $primary-color;
 
-            a:hover {
-                color: $primary-color;
-                text-shadow: 1px 1px 2px #fff;
+            h1 {
+                font-size: 0.8rem;
+                padding-left: 20px;
+            }
+
+            #links {
+                list-style-type: none;
+                display: flex;
+                font-size: 0.8rem;
+                padding-right: 20px;
+                padding-left: 20px;
+                text-decoration: none;
+            
+                a {
+                    padding-right: 15px;
+                    color: #fff;
+                    text-decoration: none;
+            
+                    &:hover {
+                        color: $primary-color;
+                        text-shadow: 1px 1px 2px #fff;
+                    }
+                }
             }
         }
     }
 }
 @mixin header576 {
-    padding-top: 10px;
-    grid-area: inicio;
-    background-color: $secondary-color;
-    height: 100%;
+    .inicio {
+        padding-top: 10px;
+        grid-area: inicio;
+        background-color: $secondary-color;
+        height: 100%;
 
-    .contenido-header {
-        display: flex;
-        color: $primary-color;
-
-        h1 {
-            font-size: 0.8rem;
-            padding-left: 8px;
-            margin-right: 10px;
-        }
-
-        #links {
-            color: #fff;
-            width: 100%;
-            list-style-type: none;
+        .contenido-header {
             display: flex;
-            padding-left: 8px;
-            padding-right: 8px;
-            margin-right: 1px;
-            font-size: 0.7rem;
-            text-decoration: none;
+            justify-content: space-between;
+            color: $primary-color;
 
-            a:hover {
-                color: $primary-color;
-                text-shadow: 1px 1px 2px #fff;
+            h1 {
+                font-size: 0.9rem;
+                padding-left: 20px;
+            }
+
+            #links {
+                list-style-type: none;
+                display: flex;
+                font-size: 0.9rem;
+                padding-right: 20px;
+                padding-left: 20px;
+                text-decoration: none;
+            
+                a {
+                    padding-right: 15px;
+                    color: #fff;
+                    text-decoration: none;
+            
+                    &:hover {
+                        color: $primary-color;
+                        text-shadow: 1px 1px 2px #fff;
+                    }
+                }
             }
         }
     }
 }
 @mixin header768 {
-    padding-top: 10px;
-    grid-area: inicio;
-    background-color: $secondary-color;
-    height: 100%;
+    .inicio {
+        padding-top: 12px;
+        grid-area: inicio;
+        background-color: $secondary-color;
+        height: 100%;
 
-    .contenido-header {
-        display: flex;
-        color: $primary-color;
-
-        h1 {
-            font-size: 1rem;
-            padding-left: 8px;
-            margin-right: 10px;
-        }
-
-        #links {
-            color: #fff;
-            width: 100%;
-            list-style-type: none;
+        .contenido-header {
             display: flex;
-            padding-left: 8px;
-            padding-right: 8px;
-            margin-right: 1px;
-            font-size: 0.9rem;
-            text-decoration: none;
+            justify-content: space-between;
+            color: $primary-color;
 
-            a:hover {
-                color: $primary-color;
-                text-shadow: 1px 1px 2px #fff;
+            h1 {
+                font-size: 1rem;
+                padding-left: 20px;
+            }
+
+            #links {
+                list-style-type: none;
+                display: flex;
+                font-size: 1rem;
+                padding-right: 20px;
+                padding-left: 20px;
+                text-decoration: none;
+            
+                a {
+                    padding-right: 15px;
+                    color: #fff;
+                    text-decoration: none;
+            
+                    &:hover {
+                        color: $primary-color;
+                        text-shadow: 1px 1px 2px #fff;
+                    }
+                }
             }
         }
     }
 }
 @mixin header992 {
-    padding-top: 10px;
-    grid-area: inicio;
-    background-color: $secondary-color;
-    height: 100%;
+    .inicio {
+        padding-top: 12px;
+        grid-area: inicio;
+        background-color: $secondary-color;
+        height: 100%;
 
-    .contenido-header {
-        display: flex;
-        color: $primary-color;
-
-        h1 {
-            padding-top: 5px;
-            font-size: 1.1rem;
-            padding-left: 8px;
-            margin-right: 10px;
-        }
-
-        #links {
-            padding-top: 5px;
-            color: #fff;
-            width: 100%;
-            list-style-type: none;
+        .contenido-header {
             display: flex;
-            padding-left: 8px;
-            padding-right: 8px;
-            margin-right: 1px;
-            font-size: 1rem;
-            text-decoration: none;
+            justify-content: space-between;
+            color: $primary-color;
 
-            a:hover {
-                color: $primary-color;
-                text-shadow: 1px 1px 2px #fff;
+            h1 {
+                font-size: 1.1rem;
+                padding-left: 20px;
+            }
+
+            #links {
+                list-style-type: none;
+                display: flex;
+                font-size: 1.1rem;
+                padding-right: 20px;
+                padding-left: 20px;
+                text-decoration: none;
+            
+                a {
+                    padding-right: 15px;
+                    color: #fff;
+                    text-decoration: none;
+            
+                    &:hover {
+                        color: $primary-color;
+                        text-shadow: 1px 1px 2px #fff;
+                    }
+                }
             }
         }
     }
 }
 @mixin header1200 {
-    padding-top: 10px;
-    grid-area: inicio;
-    background-color: $secondary-color;
-    height: 100%;
+    .inicio {
+        padding-top: 14px;
+        grid-area: inicio;
+        background-color: $secondary-color;
+        height: 100%;
 
-    .contenido-header {
-        display: flex;
-        color: $primary-color;
-
-        h1 {
-            padding-top: 5px;
-            font-size: 1.2rem;
-            padding-left: 8px;
-            margin-right: 10px;
-        }
-
-        #links {
-            padding-top: 5px;
-            color: #fff;
-            width: 100%;
-            list-style-type: none;
+        .contenido-header {
             display: flex;
-            padding-left: 8px;
-            padding-right: 8px;
-            margin-right: 1px;
-            font-size: 1.1rem;
-            text-decoration: none;
+            justify-content: space-between;
+            color: $primary-color;
 
-            a:hover {
-                color: $primary-color;
-                text-shadow: 1px 1px 2px #fff;
+            h1 {
+                font-size: 1.2rem;
+                padding-left: 20px;
+            }
+
+            #links {
+                list-style-type: none;
+                display: flex;
+                font-size: 1.2rem;
+                padding-right: 20px;
+                padding-left: 20px;
+                text-decoration: none;
+            
+                a {
+                    padding-right: 15px;
+                    color: #fff;
+                    text-decoration: none;
+            
+                    &:hover {
+                        color: $primary-color;
+                        text-shadow: 1px 1px 2px #fff;
+                    }
+                }
             }
         }
     }
@@ -221,14 +248,12 @@
     margin: 0;
     align-content: stretch;
 }
-
 @mixin presentacion {
     text-align: center;
     color: #fff;
     width: 100%;
     height: 100%;
 }
-
 @mixin bienvenida {
     height: 20%;
     text-align: center;
@@ -239,7 +264,6 @@
     padding-bottom: 15px;
     text-shadow: 2px 2px 3px #000000;
 }
-
 @mixin h2Inicio {
     height: 10%;
     text-align: center;
@@ -249,30 +273,27 @@
     padding-left: 10px;
     padding-right: 10px;
 }
-
 @mixin spanInicio {
     color: $primary-color;
     font-weight: bolder;
     text-shadow: 2px 2px 3px #000000;
 }
-
 @mixin descripcionInicio {
+    color: #fff;
     height: 30%;
     text-align: center;
-    text-shadow: 2px 2px 3px #000000;
+    text-shadow: 3px 3px 1px #000000;
     margin-right: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 20px;
 }
-
 @mixin botonInicio {
     height: 50%;
     text-align: center;
     padding-top: 20px;
     margin-right: 30px;
 }
-
 @mixin botonPortfolio {
     color: #fff;
     text-decoration: none;
@@ -286,7 +307,6 @@
     font-weight: bold;
     text-transform: uppercase;
 }
-
 // SECCION SOBRE MI
 
 @mixin botonDescargarHover {
@@ -294,7 +314,6 @@
     text-shadow: 2px 2px 2px #fff;
     transition: 1ms;
 }
-
 @mixin botonDescargarA {
     color: #fff;
     background-color: $secondary-color;
@@ -306,7 +325,6 @@
     font-weight: bold;
     text-transform: uppercase;
 }
-
 @mixin descripcion {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -315,62 +333,52 @@
     color: #fff;
     text-shadow: 1px 1px 2px #000000;
 }
-
 @mixin h3 {
     font-weight: bold;
     color: #fff;
     text-shadow: 1px 1px 2px #000000;
 }
-
 @mixin h2 {
     font-weight: bold;
     color: #fff;
     text-shadow: 1px 1px 2px #000000;
 }
-
 @mixin span {
     color: $primary-color;
     text-shadow: 1px 1px 2px #000000;
 }
-
 @mixin titulo {
     font-weight: bolder;
     color: $primary-color;
     text-shadow: 1px 1px 2px #000000;
 }
-
 @mixin contenedorFoto {
     grid-area: contenedorFoto;
     text-align: center;
     border-radius: 10%;
 }
-
 @mixin sobremi {
     text-align: center;
     grid-area: sobremi;
 }
-
 @mixin img {
     height: 60%;
     width: 50%;
     border-radius: 10%;
     border: 6px solid $secondary-color;
 }
-
 @mixin imgTablet {
     height: 80%;
     width: 30%;
     border-radius: 10%;
     border: 6px solid $secondary-color;
 }
-
 @mixin imgDesktop {
     height: 80%;
     width: 20%;
     border-radius: 10%;
     border: 6px solid $secondary-color;
 }
-
 @mixin display {
     display: grid;
     grid-template-columns: auto;
@@ -386,6 +394,191 @@
     justify-content: center;
 }
 
+// SECCION SKILLS
+@mixin displaySkills {
+    display: grid;
+        grid-template-rows: repeat(6 1fr);
+        grid-template-areas: 
+        "titulo"
+        "skill1"
+        "skill2"
+        "skill3"
+        "skill4"
+        ".";
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding-right: 10%;
+        padding-left: 10%;
+        align-content: stretch;
+        justify-content: stretch;
+}
+@mixin tituloSkill($fontSizeSkill) {
+    color: $primary-color;
+    font-size: $fontSizeSkill;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    grid-area: titulo;
+    text-shadow: 3px 3px 4px #ffffff;
+}
+@mixin listaSkill($fontSizeSkill) {
+    color: $primary-color;
+    font-size: $fontSizeSkill;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 3px #ffffff;
+}
+@mixin porcentajeSkill($fontSizeSkill) {
+    color: $primary-color;
+    font-size: $fontSizeSkill;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 3px #ffffff;
+}
+@mixin skill {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+@mixin barraProgreso($widthProgresoSkill) {
+    background: linear-gradient(90deg, rgba(252, 255, 220, 1) 0%, rgba(247, 255, 121, 1) 35%, rgba(249, 255, 0, 1) 100%);
+    background-repeat: no-repeat;
+    width: $widthProgresoSkill;
+    height: 8px;
+}
+
+// SECCION PORTFOLIO
+@mixin displayPortfolio {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 20% 80% 20%;
+    grid-template-areas:
+        "h3 h3 h3"
+        "fila fila fila"
+        ". . .";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    align-content: stretch;
+    justify-content: stretch;
+}
+@mixin tituloPortfolio($fontSize) {
+    grid-area: h3;
+    color: $primary-color;
+    font-size: $fontSize;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 3px #ffffff;
+}
+@mixin filaPortfolio {
+    grid-area: fila;
+    display: flex;
+    padding-left: 50px;
+}
+@mixin proyectoPortfolio {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;    
+}
+@mixin imgPortfolio($widthPort, $heightPort) {
+    width: $widthPort;
+    height: $heightPort;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;    
+}
+@mixin infoPortfolio($widthPort) {
+    position: relative;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    color: $primary-color;
+    width: $widthPort;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;    
+}
+
+// SECCION CONTACTO
+@mixin displayContacto {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "titulo"
+        "form";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-content: stretch;
+    justify-content: stretch;    
+}
+@mixin tituloContacto($fontSize) {
+    grid-area: titulo;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: $fontSize;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px #ffffff;
+    text-transform: uppercase;
+    color: $primary-color;    
+}
+@mixin form {
+    grid-area: form;
+    width: 100%;
+    height: 100%;    
+}
+@mixin inputTextArea {
+    background-color: #ffffffc9;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid $primary-color;    
+}
+@mixin inputMitadClass($fontSize) {
+    font-size: $fontSize;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: $primary-color;    
+}
+@mixin inputFull($fontSize) {
+    font-size: $fontSize;
+    color: $primary-color;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;    
+}
+@mixin botonContacto($fontSize) {
+    font-size: $fontSize;
+    color: $primary-color;
+    border-color: $primary-color;
+    text-shadow: 1px 1px 2px #000000;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .1s;
+    padding: 10px 15px;    
+}
+@mixin botonHoverContacto {
+    background-color: $primary-color;
+    color: #fff;
+    border-color: #fff;
+    text-shadow: 2px 2px 3px #000000;    
+}
+
 // FOOTER
 
 @mixin footerDisplay {
@@ -395,7 +588,6 @@
     text-align: center;
     color: $primary-color;
 }
-
 @mixin footerP {
     font-weight: bold;
     margin-top: 5px;
@@ -404,12 +596,10 @@
     padding-bottom: 5px;
     text-shadow: 3px 3px 2px #000000;
 }
-
 @mixin footerRedes {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
 @mixin footerA {
     margin-right: 5px;
     margin-left: 5px;

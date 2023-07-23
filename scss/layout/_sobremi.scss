@@ -6,9 +6,7 @@
         background-image: url(../assets/img/movil/fondo-sobremi-movil.webp);
         background-size: cover;
 
-        .inicio {
-            @include header320;
-        }
+        @include header320;
 
         #sobremi {
             @include display;
@@ -75,9 +73,7 @@
         background-image: url(../assets/img/movil/fondo-sobremi-movil.webp);
         background-size: cover;
 
-        .inicio {
-            @include header375;
-        }
+        @include header375;
 
         #sobremi {
             @include display;
@@ -143,9 +139,7 @@
         background-image: url(../assets/img/movil/fondo-sobremi-movil.webp);
         background-size: cover;
 
-        .inicio {
-            @include header576;
-        }
+        @include header576;
 
         #sobremi {
             @include display;
@@ -212,9 +206,7 @@
         background-image: url(../assets/img/movil/fondo-sobremi-movil.webp);
         background-size: cover;
 
-        .inicio {
-            @include header768;
-        }
+        @include header768;
 
         #sobremi {
             @include display;
@@ -281,9 +273,7 @@
         background-image: url(../assets/img/pxfuel.webp);
         background-size: cover;
 
-        .inicio {
-            @include header992;
-        }
+        @include header992;
 
         #sobremi {
             @include display;
@@ -346,9 +336,7 @@
         background-image: url(../assets/img/pxfuel.webp);
         background-size: cover;
 
-        .inicio {
-            @include header1200;
-        }
+        @include header1200;
 
         #sobremi {
             @include display;
@@ -384,7 +372,7 @@
                 }
 
                 .descripcionSobreMi {
-                    font-size: 1.4rem;
+                    font-size: 1.5rem;
                     margin-bottom: 5px;
                     @include descripcion;
                 }
@@ -412,9 +400,7 @@
         background-image: url(../assets/img/pxfuel.webp);
         background-size: cover;
 
-        .inicio {
-            @include header1200;
-        }
+        @include header1200;
 
         #sobremi {
             @include display;

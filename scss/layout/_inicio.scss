@@ -14,43 +14,7 @@
     background-image: url(../assets/img/fondo-inicio.webp);
     background-size: cover;
 
-    .inicio {
-        padding-top: 24px;
-        grid-area: inicio;
-        background-color: $secondary-color;
-        height: 100%;
-
-        .contenido-header {
-            display: flex;
-            justify-content: space-between;
-            color: $primary-color;
-
-            h1 {
-                font-size: 1.2rem;
-                padding-left: 20px;
-            }
-
-            #links {
-                list-style-type: none;
-                display: flex;
-                font-size: 1.2rem;
-                padding-right: 20px;
-                padding-left: 20px;
-                text-decoration: none;
-            
-                a {
-                    padding-right: 15px;
-                    color: #fff;
-                    text-decoration: none;
-            
-                    &:hover {
-                        color: $primary-color;
-                        text-shadow: 1px 1px 2px #fff;
-                    }
-                }
-            }
-        }
-    }
+    @include header1200;
 }
 #presentacion {
     grid-area: presentacion;
@@ -125,12 +89,10 @@
     
     #gridInicio {
         background-image: url(../assets/img/movil/fondo-inicio-movil.webp);
-        grid-template-rows: 7% auto auto;
+        grid-template-rows: 8% auto 16%;
         @include displayInicio;
 
-        .inicio {
-            @include header320;
-        }
+        @include header320;
 
         #presentacion {
             grid-area: presentacion;
@@ -153,7 +115,7 @@
                 }
 
                 .descripcion {
-                    font-size: 0.8rem;
+                    font-size: 0.6rem;
                     @include descripcion;
                 }
                 
@@ -174,10 +136,11 @@
 @media (min-width: $mediaMobile-375) {
 
     #gridInicio {
-
-        .inicio {
-            @include header375;
-        }
+        background-image: url(../assets/img/movil/fondo-inicio-movil.webp);
+        grid-template-rows: 8% auto 16%;
+        @include displayInicio;
+        
+        @include header375;
 
         #presentacion {
             grid-area: presentacion;
@@ -200,7 +163,7 @@
                 }
 
                 .descripcion {
-                    font-size: 0.9rem;
+                    font-size: 0.6rem;
                     @include descripcion;
                 }
 
@@ -220,12 +183,10 @@
     
     #gridInicio {
         background-image: url(../assets/img/fondo-inicio.webp);
-        grid-template-rows: auto auto auto;
+        grid-template-rows: 8% auto 16%;
         @include displayInicio;
 
-        .inicio {
-            @include header576;
-        }
+        @include header576;
 
         #presentacion {
             grid-area: presentacion;
@@ -248,7 +209,7 @@
                 }
 
                 .descripcion {
-                    font-size: 1rem;
+                    font-size: 0.8rem;
                     @include descripcion;
                 }
 
@@ -268,12 +229,10 @@
 
     #gridInicio {
         background-image: url(../assets/img/fondo-inicio.webp);
-        grid-template-rows: auto auto auto;
+        grid-template-rows: 8% auto 14%;
         @include displayInicio;
 
-        .inicio {
-            @include header768;
-        }
+        @include header768;
 
         #presentacion {
             grid-area: presentacion;
@@ -296,7 +255,7 @@
                 }
 
                 .descripcion {
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     @include descripcion;
                 }
 
@@ -316,12 +275,10 @@
 
     #gridInicio {
         background-image: url(../assets/img/fondo-inicio.webp);
-        grid-template-rows: auto auto auto;
+        grid-template-rows: 6% auto 14%;
         @include displayInicio;
 
-        .inicio {
-            @include header992;
-        }
+        @include header992;
 
         #presentacion {
             grid-area: presentacion;
@@ -344,7 +301,7 @@
                 }
 
                 .descripcion {
-                    font-size: 1.8rem;
+                    font-size: 1rem;
                     @include descripcionInicio;
                 }
 
@@ -364,12 +321,10 @@
 
     #gridInicio {
         background-image: url(../assets/img/fondo-inicio.webp);
-        grid-template-rows: auto auto auto;
+        grid-template-rows: 6% auto 12%;
         @include displayInicio;
 
-        .inicio {
-            @include header1200;
-        }
+        @include header1200;
 
         #presentacion {
             grid-area: presentacion;
@@ -392,7 +347,7 @@
                 }
 
                 .descripcion {
-                    font-size: 1.8rem;
+                    font-size: 1.4rem;
                     @include descripcionInicio;
                 }
 
@@ -412,12 +367,10 @@
 
     #gridInicio {
         background-image: url(../assets/img/fondo-inicio.webp);
-        grid-template-rows: auto auto auto;
+        grid-template-rows: 6% auto 12%;
         @include displayInicio;
 
-        .inicio {
-            @include header1200;
-        }
+        @include header1200;
 
         #presentacion {
             grid-area: presentacion;
@@ -440,7 +393,7 @@
                 }
 
                 .descripcion {
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     @include descripcionInicio;
                 }
 

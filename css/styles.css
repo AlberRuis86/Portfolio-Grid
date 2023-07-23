@@ -19,7 +19,7 @@
   background-size: cover;
 }
 #gridInicio .inicio {
-  padding-top: 24px;
+  padding-top: 14px;
   grid-area: inicio;
   background-color: rgba(0, 0, 0, 0.4588235294);
   height: 100%;
@@ -115,7 +115,7 @@
 @media (min-width: 320px) {
   #gridInicio {
     background-image: url(../assets/img/movil/fondo-inicio-movil.webp);
-    grid-template-rows: 7% auto auto;
+    grid-template-rows: 8% auto 16%;
     background-size: cover;
     display: grid;
     grid-template-columns: auto;
@@ -133,21 +133,24 @@
   }
   #gridInicio .inicio .contenido-header {
     display: flex;
+    justify-content: space-between;
     color: #ff5080;
   }
   #gridInicio .inicio .contenido-header h1 {
     font-size: 0.7rem;
-    padding-left: 8px;
-    margin-right: 10px;
+    padding-left: 20px;
   }
   #gridInicio .inicio .contenido-header #links {
-    width: 100%;
     list-style-type: none;
     display: flex;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-right: 1px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  #gridInicio .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
     text-decoration: none;
   }
   #gridInicio .inicio .contenido-header #links a:hover {
@@ -190,7 +193,7 @@
     text-shadow: 2px 2px 3px #000000;
   }
   #gridInicio #presentacion .presentacion .descripcion {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     margin-top: 10px;
     margin-bottom: 20px;
     padding-right: 20px;
@@ -220,6 +223,18 @@
   }
 }
 @media (min-width: 375px) {
+  #gridInicio {
+    background-image: url(../assets/img/movil/fondo-inicio-movil.webp);
+    grid-template-rows: 8% auto 16%;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "inicio" "presentacion" "footer";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    align-content: stretch;
+  }
   #gridInicio .inicio {
     padding-top: 10px;
     grid-area: inicio;
@@ -228,22 +243,24 @@
   }
   #gridInicio .inicio .contenido-header {
     display: flex;
+    justify-content: space-between;
     color: #ff5080;
   }
   #gridInicio .inicio .contenido-header h1 {
-    font-size: 0.7rem;
-    padding-left: 8px;
-    margin-right: 10px;
+    font-size: 0.8rem;
+    padding-left: 20px;
   }
   #gridInicio .inicio .contenido-header #links {
-    color: #fff;
-    width: 100%;
     list-style-type: none;
     display: flex;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-right: 1px;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  #gridInicio .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
     text-decoration: none;
   }
   #gridInicio .inicio .contenido-header #links a:hover {
@@ -286,7 +303,7 @@
     text-shadow: 2px 2px 3px #000000;
   }
   #gridInicio #presentacion .presentacion .descripcion {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     margin-top: 10px;
     margin-bottom: 20px;
     padding-right: 20px;
@@ -318,7 +335,7 @@
 @media (min-width: 576px) {
   #gridInicio {
     background-image: url(../assets/img/fondo-inicio.webp);
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 8% auto 16%;
     background-size: cover;
     display: grid;
     grid-template-columns: auto;
@@ -336,22 +353,24 @@
   }
   #gridInicio .inicio .contenido-header {
     display: flex;
+    justify-content: space-between;
     color: #ff5080;
   }
   #gridInicio .inicio .contenido-header h1 {
-    font-size: 0.8rem;
-    padding-left: 8px;
-    margin-right: 10px;
+    font-size: 0.9rem;
+    padding-left: 20px;
   }
   #gridInicio .inicio .contenido-header #links {
-    color: #fff;
-    width: 100%;
     list-style-type: none;
     display: flex;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-right: 1px;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  #gridInicio .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
     text-decoration: none;
   }
   #gridInicio .inicio .contenido-header #links a:hover {
@@ -394,7 +413,7 @@
     text-shadow: 2px 2px 3px #000000;
   }
   #gridInicio #presentacion .presentacion .descripcion {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: 10px;
     margin-bottom: 20px;
     padding-right: 20px;
@@ -426,7 +445,7 @@
 @media (min-width: 768px) {
   #gridInicio {
     background-image: url(../assets/img/fondo-inicio.webp);
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 8% auto 14%;
     background-size: cover;
     display: grid;
     grid-template-columns: auto;
@@ -437,29 +456,31 @@
     align-content: stretch;
   }
   #gridInicio .inicio {
-    padding-top: 10px;
+    padding-top: 12px;
     grid-area: inicio;
     background-color: rgba(0, 0, 0, 0.4588235294);
     height: 100%;
   }
   #gridInicio .inicio .contenido-header {
     display: flex;
+    justify-content: space-between;
     color: #ff5080;
   }
   #gridInicio .inicio .contenido-header h1 {
     font-size: 1rem;
-    padding-left: 8px;
-    margin-right: 10px;
+    padding-left: 20px;
   }
   #gridInicio .inicio .contenido-header #links {
-    color: #fff;
-    width: 100%;
     list-style-type: none;
     display: flex;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-right: 1px;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  #gridInicio .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
     text-decoration: none;
   }
   #gridInicio .inicio .contenido-header #links a:hover {
@@ -502,7 +523,7 @@
     text-shadow: 2px 2px 3px #000000;
   }
   #gridInicio #presentacion .presentacion .descripcion {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 10px;
     margin-bottom: 20px;
     padding-right: 20px;
@@ -534,7 +555,7 @@
 @media (min-width: 992px) {
   #gridInicio {
     background-image: url(../assets/img/fondo-inicio.webp);
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 6% auto 14%;
     background-size: cover;
     display: grid;
     grid-template-columns: auto;
@@ -545,31 +566,31 @@
     align-content: stretch;
   }
   #gridInicio .inicio {
-    padding-top: 10px;
+    padding-top: 12px;
     grid-area: inicio;
     background-color: rgba(0, 0, 0, 0.4588235294);
     height: 100%;
   }
   #gridInicio .inicio .contenido-header {
     display: flex;
+    justify-content: space-between;
     color: #ff5080;
   }
   #gridInicio .inicio .contenido-header h1 {
-    padding-top: 5px;
     font-size: 1.1rem;
-    padding-left: 8px;
-    margin-right: 10px;
+    padding-left: 20px;
   }
   #gridInicio .inicio .contenido-header #links {
-    padding-top: 5px;
-    color: #fff;
-    width: 100%;
     list-style-type: none;
     display: flex;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-right: 1px;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  #gridInicio .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
     text-decoration: none;
   }
   #gridInicio .inicio .contenido-header #links a:hover {
@@ -612,10 +633,11 @@
     text-shadow: 2px 2px 3px #000000;
   }
   #gridInicio #presentacion .presentacion .descripcion {
-    font-size: 1.8rem;
+    font-size: 1rem;
+    color: #fff;
     height: 30%;
     text-align: center;
-    text-shadow: 2px 2px 3px #000000;
+    text-shadow: 3px 3px 1px #000000;
     margin-right: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -645,7 +667,7 @@
 @media (min-width: 1200px) {
   #gridInicio {
     background-image: url(../assets/img/fondo-inicio.webp);
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 6% auto 12%;
     background-size: cover;
     display: grid;
     grid-template-columns: auto;
@@ -656,31 +678,31 @@
     align-content: stretch;
   }
   #gridInicio .inicio {
-    padding-top: 10px;
+    padding-top: 14px;
     grid-area: inicio;
     background-color: rgba(0, 0, 0, 0.4588235294);
     height: 100%;
   }
   #gridInicio .inicio .contenido-header {
     display: flex;
+    justify-content: space-between;
     color: #ff5080;
   }
   #gridInicio .inicio .contenido-header h1 {
-    padding-top: 5px;
     font-size: 1.2rem;
-    padding-left: 8px;
-    margin-right: 10px;
+    padding-left: 20px;
   }
   #gridInicio .inicio .contenido-header #links {
-    padding-top: 5px;
-    color: #fff;
-    width: 100%;
     list-style-type: none;
     display: flex;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-right: 1px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  #gridInicio .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
     text-decoration: none;
   }
   #gridInicio .inicio .contenido-header #links a:hover {
@@ -723,10 +745,11 @@
     text-shadow: 2px 2px 3px #000000;
   }
   #gridInicio #presentacion .presentacion .descripcion {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    color: #fff;
     height: 30%;
     text-align: center;
-    text-shadow: 2px 2px 3px #000000;
+    text-shadow: 3px 3px 1px #000000;
     margin-right: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -756,7 +779,7 @@
 @media (min-width: 1400px) {
   #gridInicio {
     background-image: url(../assets/img/fondo-inicio.webp);
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 6% auto 12%;
     background-size: cover;
     display: grid;
     grid-template-columns: auto;
@@ -767,31 +790,31 @@
     align-content: stretch;
   }
   #gridInicio .inicio {
-    padding-top: 10px;
+    padding-top: 14px;
     grid-area: inicio;
     background-color: rgba(0, 0, 0, 0.4588235294);
     height: 100%;
   }
   #gridInicio .inicio .contenido-header {
     display: flex;
+    justify-content: space-between;
     color: #ff5080;
   }
   #gridInicio .inicio .contenido-header h1 {
-    padding-top: 5px;
     font-size: 1.2rem;
-    padding-left: 8px;
-    margin-right: 10px;
+    padding-left: 20px;
   }
   #gridInicio .inicio .contenido-header #links {
-    padding-top: 5px;
-    color: #fff;
-    width: 100%;
     list-style-type: none;
     display: flex;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-right: 1px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  #gridInicio .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
     text-decoration: none;
   }
   #gridInicio .inicio .contenido-header #links a:hover {
@@ -834,10 +857,11 @@
     text-shadow: 2px 2px 3px #000000;
   }
   #gridInicio #presentacion .presentacion .descripcion {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: #fff;
     height: 30%;
     text-align: center;
-    text-shadow: 2px 2px 3px #000000;
+    text-shadow: 3px 3px 1px #000000;
     margin-right: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -877,21 +901,24 @@
   }
   .sobreMiBody .inicio .contenido-header {
     display: flex;
+    justify-content: space-between;
     color: #ff5080;
   }
   .sobreMiBody .inicio .contenido-header h1 {
     font-size: 0.7rem;
-    padding-left: 8px;
-    margin-right: 10px;
+    padding-left: 20px;
   }
   .sobreMiBody .inicio .contenido-header #links {
-    width: 100%;
     list-style-type: none;
     display: flex;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-right: 1px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .sobreMiBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
     text-decoration: none;
   }
   .sobreMiBody .inicio .contenido-header #links a:hover {
@@ -992,22 +1019,24 @@
   }
   .sobreMiBody .inicio .contenido-header {
     display: flex;
+    justify-content: space-between;
     color: #ff5080;
   }
   .sobreMiBody .inicio .contenido-header h1 {
-    font-size: 0.7rem;
-    padding-left: 8px;
-    margin-right: 10px;
+    font-size: 0.8rem;
+    padding-left: 20px;
   }
   .sobreMiBody .inicio .contenido-header #links {
-    color: #fff;
-    width: 100%;
     list-style-type: none;
     display: flex;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-right: 1px;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .sobreMiBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
     text-decoration: none;
   }
   .sobreMiBody .inicio .contenido-header #links a:hover {
@@ -1106,22 +1135,24 @@
   }
   .sobreMiBody .inicio .contenido-header {
     display: flex;
+    justify-content: space-between;
     color: #ff5080;
   }
   .sobreMiBody .inicio .contenido-header h1 {
-    font-size: 0.8rem;
-    padding-left: 8px;
-    margin-right: 10px;
+    font-size: 0.9rem;
+    padding-left: 20px;
   }
   .sobreMiBody .inicio .contenido-header #links {
-    color: #fff;
-    width: 100%;
     list-style-type: none;
     display: flex;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-right: 1px;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .sobreMiBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
     text-decoration: none;
   }
   .sobreMiBody .inicio .contenido-header #links a:hover {
@@ -1215,29 +1246,31 @@
     background-size: cover;
   }
   .sobreMiBody .inicio {
-    padding-top: 10px;
+    padding-top: 12px;
     grid-area: inicio;
     background-color: rgba(0, 0, 0, 0.4588235294);
     height: 100%;
   }
   .sobreMiBody .inicio .contenido-header {
     display: flex;
+    justify-content: space-between;
     color: #ff5080;
   }
   .sobreMiBody .inicio .contenido-header h1 {
     font-size: 1rem;
-    padding-left: 8px;
-    margin-right: 10px;
+    padding-left: 20px;
   }
   .sobreMiBody .inicio .contenido-header #links {
-    color: #fff;
-    width: 100%;
     list-style-type: none;
     display: flex;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-right: 1px;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .sobreMiBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
     text-decoration: none;
   }
   .sobreMiBody .inicio .contenido-header #links a:hover {
@@ -1333,31 +1366,31 @@
     background-size: cover;
   }
   .sobreMiBody .inicio {
-    padding-top: 10px;
+    padding-top: 12px;
     grid-area: inicio;
     background-color: rgba(0, 0, 0, 0.4588235294);
     height: 100%;
   }
   .sobreMiBody .inicio .contenido-header {
     display: flex;
+    justify-content: space-between;
     color: #ff5080;
   }
   .sobreMiBody .inicio .contenido-header h1 {
-    padding-top: 5px;
     font-size: 1.1rem;
-    padding-left: 8px;
-    margin-right: 10px;
+    padding-left: 20px;
   }
   .sobreMiBody .inicio .contenido-header #links {
-    padding-top: 5px;
-    color: #fff;
-    width: 100%;
     list-style-type: none;
     display: flex;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-right: 1px;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .sobreMiBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
     text-decoration: none;
   }
   .sobreMiBody .inicio .contenido-header #links a:hover {
@@ -1448,31 +1481,31 @@
     background-size: cover;
   }
   .sobreMiBody .inicio {
-    padding-top: 10px;
+    padding-top: 14px;
     grid-area: inicio;
     background-color: rgba(0, 0, 0, 0.4588235294);
     height: 100%;
   }
   .sobreMiBody .inicio .contenido-header {
     display: flex;
+    justify-content: space-between;
     color: #ff5080;
   }
   .sobreMiBody .inicio .contenido-header h1 {
-    padding-top: 5px;
     font-size: 1.2rem;
-    padding-left: 8px;
-    margin-right: 10px;
+    padding-left: 20px;
   }
   .sobreMiBody .inicio .contenido-header #links {
-    padding-top: 5px;
-    color: #fff;
-    width: 100%;
     list-style-type: none;
     display: flex;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-right: 1px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .sobreMiBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
     text-decoration: none;
   }
   .sobreMiBody .inicio .contenido-header #links a:hover {
@@ -1528,7 +1561,7 @@
     text-shadow: 1px 1px 2px #000000;
   }
   .sobreMiBody #sobremi .sobremi .descripcionSobreMi {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-bottom: 5px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -1564,31 +1597,31 @@
     background-size: cover;
   }
   .sobreMiBody .inicio {
-    padding-top: 10px;
+    padding-top: 14px;
     grid-area: inicio;
     background-color: rgba(0, 0, 0, 0.4588235294);
     height: 100%;
   }
   .sobreMiBody .inicio .contenido-header {
     display: flex;
+    justify-content: space-between;
     color: #ff5080;
   }
   .sobreMiBody .inicio .contenido-header h1 {
-    padding-top: 5px;
     font-size: 1.2rem;
-    padding-left: 8px;
-    margin-right: 10px;
+    padding-left: 20px;
   }
   .sobreMiBody .inicio .contenido-header #links {
-    padding-top: 5px;
-    color: #fff;
-    width: 100%;
     list-style-type: none;
     display: flex;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-right: 1px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .sobreMiBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
     text-decoration: none;
   }
   .sobreMiBody .inicio .contenido-header #links a:hover {
@@ -1674,22 +1707,26 @@
     transition: 1ms;
   }
 }
-.inicio {
-  padding-top: 24px;
+.skillsBody {
+  background-image: url(../assets/img/fondo-skills.webp);
+  background-position: cover;
+}
+.skillsBody .inicio {
+  padding-top: 14px;
   grid-area: inicio;
   background-color: rgba(0, 0, 0, 0.4588235294);
   height: 100%;
 }
-.inicio .contenido-header {
+.skillsBody .inicio .contenido-header {
   display: flex;
   justify-content: space-between;
   color: #ff5080;
 }
-.inicio .contenido-header h1 {
+.skillsBody .inicio .contenido-header h1 {
   font-size: 1.2rem;
   padding-left: 20px;
 }
-.inicio .contenido-header #links {
+.skillsBody .inicio .contenido-header #links {
   list-style-type: none;
   display: flex;
   font-size: 1.2rem;
@@ -1697,32 +1734,28 @@
   padding-left: 20px;
   text-decoration: none;
 }
-.inicio .contenido-header #links a {
+.skillsBody .inicio .contenido-header #links a {
   padding-right: 15px;
   color: #fff;
   text-decoration: none;
 }
-.inicio .contenido-header #links a:hover {
+.skillsBody .inicio .contenido-header #links a:hover {
   color: #ff5080;
   text-shadow: 1px 1px 2px #fff;
 }
-
-.skillsBody {
-  background-image: url(../assets/img/fondo-skills.jpg);
-  background-position: cover;
-}
-
-#skills {
+.skillsBody #skills {
   display: grid;
   grid-template-rows: repeat(6 1fr);
   grid-template-areas: "titulo" "skill1" "skill2" "skill3" "skill4" ".";
   width: 100%;
   height: 100vh;
   margin: 0;
+  padding-right: 10%;
+  padding-left: 10%;
   align-content: stretch;
   justify-content: stretch;
 }
-#skills .skillTitulo {
+.skillsBody #skills .skillTitulo {
   color: #ff5080;
   font-size: 2.8rem;
   font-weight: bolder;
@@ -1732,7 +1765,7 @@
   grid-area: titulo;
   text-shadow: 3px 3px 4px #ffffff;
 }
-#skills .lista {
+.skillsBody #skills .lista {
   color: #ff5080;
   font-size: 1.8rem;
   font-weight: bold;
@@ -1740,7 +1773,7 @@
   margin-bottom: 3px;
   text-shadow: 2px 2px 3px #ffffff;
 }
-#skills .porcentaje {
+.skillsBody #skills .porcentaje {
   color: #ff5080;
   font-size: 1.8rem;
   font-weight: bold;
@@ -1748,71 +1781,943 @@
   margin-bottom: 3px;
   text-shadow: 2px 2px 3px #ffffff;
 }
-#skills #skill1 {
+.skillsBody #skills #skill1 {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
   grid-area: skill1;
 }
-#skills #skill1 .barra .barra-progreso1 {
+.skillsBody #skills #skill1 .barra .barra-progreso1 {
   background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
   background-repeat: no-repeat;
   width: 80%;
   height: 8px;
 }
-#skills #skill2 {
+.skillsBody #skills #skill2 {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
   grid-area: skill2;
 }
-#skills #skill2 .barra .barra-progreso2 {
+.skillsBody #skills #skill2 .barra .barra-progreso2 {
   background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
   background-repeat: no-repeat;
   width: 60%;
   height: 8px;
 }
-#skills #skill3 {
+.skillsBody #skills #skill3 {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
   grid-area: skill3;
 }
-#skills #skill3 .barra .barra-progreso3 {
+.skillsBody #skills #skill3 .barra .barra-progreso3 {
   background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
   background-repeat: no-repeat;
   width: 40%;
   height: 8px;
 }
-#skills #skill4 {
+.skillsBody #skills #skill4 {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
   grid-area: skill4;
 }
-#skills #skill4 .barra .barra-progreso4 {
+.skillsBody #skills #skill4 .barra .barra-progreso4 {
   background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
   background-repeat: no-repeat;
   width: 10%;
   height: 8px;
 }
 
-.inicio {
-  padding-top: 24px;
+@media (min-width: 320px) {
+  .skillsBody {
+    background-image: url(../assets/img/movil/fondo-skills-movil.webp);
+    background-position: cover;
+  }
+  .skillsBody .inicio {
+    padding-top: 10px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .skillsBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .skillsBody .inicio .contenido-header h1 {
+    font-size: 0.7rem;
+    padding-left: 20px;
+  }
+  .skillsBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 0.7rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .skillsBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .skillsBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .skillsBody #skills {
+    display: grid;
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas: "titulo" "skill1" "skill2" "skill3" "skill4" ".";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-right: 10%;
+    padding-left: 10%;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .skillsBody #skills .skillTitulo {
+    color: #ff5080;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    grid-area: titulo;
+    text-shadow: 3px 3px 4px #ffffff;
+  }
+  .skillsBody #skills .lista {
+    color: #ff5080;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .skillsBody #skills .porcentaje {
+    color: #ff5080;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .skillsBody #skills #skill1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill1;
+  }
+  .skillsBody #skills #skill1 .barra .barra-progreso1 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill2;
+  }
+  .skillsBody #skills #skill2 .barra .barra-progreso2 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill3 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill3;
+  }
+  .skillsBody #skills #skill3 .barra .barra-progreso3 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill4 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill4;
+  }
+  .skillsBody #skills #skill4 .barra .barra-progreso4 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 8px;
+  }
+}
+@media (min-width: 375px) {
+  .skillsBody {
+    background-image: url(../assets/img/movil/fondo-skills-movil.webp);
+    background-position: cover;
+  }
+  .skillsBody .inicio {
+    padding-top: 10px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .skillsBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .skillsBody .inicio .contenido-header h1 {
+    font-size: 0.8rem;
+    padding-left: 20px;
+  }
+  .skillsBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 0.8rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .skillsBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .skillsBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .skillsBody #skills {
+    display: grid;
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas: "titulo" "skill1" "skill2" "skill3" "skill4" ".";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-right: 10%;
+    padding-left: 10%;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .skillsBody #skills .skillTitulo {
+    color: #ff5080;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    grid-area: titulo;
+    text-shadow: 3px 3px 4px #ffffff;
+  }
+  .skillsBody #skills .lista {
+    color: #ff5080;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .skillsBody #skills .porcentaje {
+    color: #ff5080;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .skillsBody #skills #skill1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill1;
+  }
+  .skillsBody #skills #skill1 .barra .barra-progreso1 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill2;
+  }
+  .skillsBody #skills #skill2 .barra .barra-progreso2 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill3 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill3;
+  }
+  .skillsBody #skills #skill3 .barra .barra-progreso3 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill4 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill4;
+  }
+  .skillsBody #skills #skill4 .barra .barra-progreso4 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 8px;
+  }
+}
+@media (min-width: 576px) {
+  .skillsBody {
+    background-image: url(../assets/img/movil/fondo-skills-tablet.webp);
+    background-position: cover;
+  }
+  .skillsBody .inicio {
+    padding-top: 10px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .skillsBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .skillsBody .inicio .contenido-header h1 {
+    font-size: 0.9rem;
+    padding-left: 20px;
+  }
+  .skillsBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 0.9rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .skillsBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .skillsBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .skillsBody #skills {
+    display: grid;
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas: "titulo" "skill1" "skill2" "skill3" "skill4" ".";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-right: 10%;
+    padding-left: 10%;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .skillsBody #skills .skillTitulo {
+    color: #ff5080;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    grid-area: titulo;
+    text-shadow: 3px 3px 4px #ffffff;
+  }
+  .skillsBody #skills .lista {
+    color: #ff5080;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .skillsBody #skills .porcentaje {
+    color: #ff5080;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .skillsBody #skills #skill1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill1;
+  }
+  .skillsBody #skills #skill1 .barra .barra-progreso1 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill2;
+  }
+  .skillsBody #skills #skill2 .barra .barra-progreso2 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill3 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill3;
+  }
+  .skillsBody #skills #skill3 .barra .barra-progreso3 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill4 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill4;
+  }
+  .skillsBody #skills #skill4 .barra .barra-progreso4 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 8px;
+  }
+}
+@media (min-width: 768px) {
+  .skillsBody {
+    background-image: url(../assets/img/movil/fondo-skills-tablet.webp);
+    background-position: cover;
+  }
+  .skillsBody .inicio {
+    padding-top: 12px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .skillsBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .skillsBody .inicio .contenido-header h1 {
+    font-size: 1rem;
+    padding-left: 20px;
+  }
+  .skillsBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 1rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .skillsBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .skillsBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .skillsBody #skills {
+    display: grid;
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas: "titulo" "skill1" "skill2" "skill3" "skill4" ".";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-right: 10%;
+    padding-left: 10%;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .skillsBody #skills .skillTitulo {
+    color: #ff5080;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    grid-area: titulo;
+    text-shadow: 3px 3px 4px #ffffff;
+  }
+  .skillsBody #skills .lista {
+    color: #ff5080;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .skillsBody #skills .porcentaje {
+    color: #ff5080;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .skillsBody #skills #skill1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill1;
+  }
+  .skillsBody #skills #skill1 .barra .barra-progreso1 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill2;
+  }
+  .skillsBody #skills #skill2 .barra .barra-progreso2 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill3 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill3;
+  }
+  .skillsBody #skills #skill3 .barra .barra-progreso3 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill4 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill4;
+  }
+  .skillsBody #skills #skill4 .barra .barra-progreso4 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 8px;
+  }
+}
+@media (min-width: 992px) {
+  .skillsBody {
+    background-image: url(../assets/img/fondo-skills.webp);
+    background-position: cover;
+  }
+  .skillsBody .inicio {
+    padding-top: 12px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .skillsBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .skillsBody .inicio .contenido-header h1 {
+    font-size: 1.1rem;
+    padding-left: 20px;
+  }
+  .skillsBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 1.1rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .skillsBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .skillsBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .skillsBody #skills {
+    display: grid;
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas: "titulo" "skill1" "skill2" "skill3" "skill4" ".";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-right: 10%;
+    padding-left: 10%;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .skillsBody #skills .skillTitulo {
+    color: #ff5080;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    grid-area: titulo;
+    text-shadow: 3px 3px 4px #ffffff;
+  }
+  .skillsBody #skills .lista {
+    color: #ff5080;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .skillsBody #skills .porcentaje {
+    color: #ff5080;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .skillsBody #skills #skill1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill1;
+  }
+  .skillsBody #skills #skill1 .barra .barra-progreso1 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill2;
+  }
+  .skillsBody #skills #skill2 .barra .barra-progreso2 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill3 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill3;
+  }
+  .skillsBody #skills #skill3 .barra .barra-progreso3 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill4 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill4;
+  }
+  .skillsBody #skills #skill4 .barra .barra-progreso4 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 8px;
+  }
+}
+@media (min-width: 1200px) {
+  .skillsBody {
+    background-image: url(../assets/img/fondo-skills.webp);
+    background-position: cover;
+  }
+  .skillsBody .inicio {
+    padding-top: 14px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .skillsBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .skillsBody .inicio .contenido-header h1 {
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+  .skillsBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .skillsBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .skillsBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .skillsBody #skills {
+    display: grid;
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas: "titulo" "skill1" "skill2" "skill3" "skill4" ".";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-right: 10%;
+    padding-left: 10%;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .skillsBody #skills .skillTitulo {
+    color: #ff5080;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    grid-area: titulo;
+    text-shadow: 3px 3px 4px #ffffff;
+  }
+  .skillsBody #skills .lista {
+    color: #ff5080;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .skillsBody #skills .porcentaje {
+    color: #ff5080;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .skillsBody #skills #skill1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill1;
+  }
+  .skillsBody #skills #skill1 .barra .barra-progreso1 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill2;
+  }
+  .skillsBody #skills #skill2 .barra .barra-progreso2 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill3 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill3;
+  }
+  .skillsBody #skills #skill3 .barra .barra-progreso3 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill4 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill4;
+  }
+  .skillsBody #skills #skill4 .barra .barra-progreso4 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 8px;
+  }
+}
+@media (min-width: 1400px) {
+  .skillsBody {
+    background-image: url(../assets/img/fondo-skills.webp);
+    background-position: cover;
+  }
+  .skillsBody .inicio {
+    padding-top: 14px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .skillsBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .skillsBody .inicio .contenido-header h1 {
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+  .skillsBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .skillsBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .skillsBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .skillsBody #skills {
+    display: grid;
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas: "titulo" "skill1" "skill2" "skill3" "skill4" ".";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-right: 10%;
+    padding-left: 10%;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .skillsBody #skills .skillTitulo {
+    color: #ff5080;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    grid-area: titulo;
+    text-shadow: 3px 3px 4px #ffffff;
+  }
+  .skillsBody #skills .lista {
+    color: #ff5080;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .skillsBody #skills .porcentaje {
+    color: #ff5080;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .skillsBody #skills #skill1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill1;
+  }
+  .skillsBody #skills #skill1 .barra .barra-progreso1 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill2;
+  }
+  .skillsBody #skills #skill2 .barra .barra-progreso2 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill3 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill3;
+  }
+  .skillsBody #skills #skill3 .barra .barra-progreso3 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 8px;
+  }
+  .skillsBody #skills #skill4 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: skill4;
+  }
+  .skillsBody #skills #skill4 .barra .barra-progreso4 {
+    background: linear-gradient(90deg, rgb(252, 255, 220) 0%, rgb(247, 255, 121) 35%, rgb(249, 255, 0) 100%);
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 8px;
+  }
+}
+.portfolioBody {
+  background-image: url(../assets/img/developer.webp);
+  background-position: cover;
+}
+.portfolioBody .inicio {
+  padding-top: 14px;
   grid-area: inicio;
   background-color: rgba(0, 0, 0, 0.4588235294);
   height: 100%;
 }
-.inicio .contenido-header {
+.portfolioBody .inicio .contenido-header {
   display: flex;
   justify-content: space-between;
   color: #ff5080;
 }
-.inicio .contenido-header h1 {
+.portfolioBody .inicio .contenido-header h1 {
   font-size: 1.2rem;
   padding-left: 20px;
 }
-.inicio .contenido-header #links {
+.portfolioBody .inicio .contenido-header #links {
   list-style-type: none;
   display: flex;
   font-size: 1.2rem;
@@ -1820,22 +2725,16 @@
   padding-left: 20px;
   text-decoration: none;
 }
-.inicio .contenido-header #links a {
+.portfolioBody .inicio .contenido-header #links a {
   padding-right: 15px;
   color: #fff;
   text-decoration: none;
 }
-.inicio .contenido-header #links a:hover {
+.portfolioBody .inicio .contenido-header #links a:hover {
   color: #ff5080;
   text-shadow: 1px 1px 2px #fff;
 }
-
-.portfolioBody {
-  background-image: url(../assets/img/developer.jpg);
-  background-position: cover;
-}
-
-#portfolio {
+.portfolioBody #portfolio {
   display: grid;
   grid-template-columns: repeat(3 1fr);
   grid-template-rows: 20% 80% 20%;
@@ -1846,7 +2745,7 @@
   align-content: stretch;
   justify-content: stretch;
 }
-#portfolio .titulo-seccion {
+.portfolioBody #portfolio .titulo-seccion {
   grid-area: h3;
   color: #ff5080;
   font-size: 2.8rem;
@@ -1856,27 +2755,27 @@
   padding-bottom: 20px;
   text-shadow: 2px 2px 3px #ffffff;
 }
-#portfolio .fila {
+.portfolioBody #portfolio .fila {
   grid-area: fila;
   display: flex;
   padding-left: 50px;
 }
-#portfolio .fila .proyecto {
+.portfolioBody #portfolio .fila .proyecto {
   display: inline-block;
   position: relative;
   overflow: hidden;
 }
-#portfolio .fila .proyecto img {
+.portfolioBody #portfolio .fila .proyecto img {
   width: 90%;
   height: 60%;
   filter: grayscale(1);
   object-fit: cover;
   transition: 0.5s;
 }
-#portfolio .fila .proyecto:hover img {
+.portfolioBody #portfolio .fila .proyecto:hover img {
   filter: grayscale(0);
 }
-#portfolio .fila .proyecto .info {
+.portfolioBody #portfolio .fila .proyecto .info {
   position: relative;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
@@ -1887,27 +2786,697 @@
   bottom: -40px;
   transition: 0.5s;
 }
-#portfolio .fila .proyecto:hover .info {
+.portfolioBody #portfolio .fila .proyecto:hover .info {
   opacity: 1;
   bottom: 0;
 }
 
-.inicio {
-  padding-top: 24px;
+@media (min-width: 320px) {
+  .portfolioBody {
+    background-image: url(../assets/img/movil/fondo-portfolio-tablet.webp);
+    background-position: cover;
+  }
+  .portfolioBody .inicio {
+    padding-top: 10px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .portfolioBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .portfolioBody .inicio .contenido-header h1 {
+    font-size: 0.7rem;
+    padding-left: 20px;
+  }
+  .portfolioBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 0.7rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .portfolioBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .portfolioBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .portfolioBody #portfolio {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 20% 80% 20%;
+    grid-template-areas: "h3 h3 h3" "fila fila fila" ". . .";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .portfolioBody #portfolio .titulo-seccion {
+    grid-area: h3;
+    color: #ff5080;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .portfolioBody #portfolio .fila {
+    grid-area: fila;
+    display: flex;
+    padding-left: 50px;
+    margin-right: 10px;
+    padding-left: 10px;
+  }
+  .portfolioBody #portfolio .fila .proyecto {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+  .portfolioBody #portfolio .fila .proyecto img {
+    margin-right: 0;
+    padding-left: 0;
+    width: 90%;
+    height: 40%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 0.5s;
+  }
+  .portfolioBody #portfolio .fila .proyecto:hover img {
+    filter: grayscale(0);
+  }
+  .portfolioBody #portfolio .fila .proyecto .info {
+    position: relative;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ff5080;
+    width: 90%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: 0.5s;
+  }
+  .portfolioBody #portfolio .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@media (min-width: 375px) {
+  .portfolioBody {
+    background-image: url(../assets/img/movil/fondo-portfolio-tablet.webp);
+    background-position: cover;
+  }
+  .portfolioBody .inicio {
+    padding-top: 10px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .portfolioBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .portfolioBody .inicio .contenido-header h1 {
+    font-size: 0.8rem;
+    padding-left: 20px;
+  }
+  .portfolioBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 0.8rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .portfolioBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .portfolioBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .portfolioBody #portfolio {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 20% 80% 20%;
+    grid-template-areas: "h3 h3 h3" "fila fila fila" ". . .";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .portfolioBody #portfolio .titulo-seccion {
+    grid-area: h3;
+    color: #ff5080;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .portfolioBody #portfolio .fila {
+    grid-area: fila;
+    display: flex;
+    padding-left: 50px;
+    margin-right: 10px;
+    padding-left: 10px;
+  }
+  .portfolioBody #portfolio .fila .proyecto {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+  .portfolioBody #portfolio .fila .proyecto img {
+    margin-right: 0;
+    padding-left: 0;
+    width: 90%;
+    height: 40%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 0.5s;
+  }
+  .portfolioBody #portfolio .fila .proyecto:hover img {
+    filter: grayscale(0);
+  }
+  .portfolioBody #portfolio .fila .proyecto .info {
+    position: relative;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ff5080;
+    width: 90%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: 0.5s;
+  }
+  .portfolioBody #portfolio .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@media (min-width: 576px) {
+  .portfolioBody {
+    background-image: url(../assets/img/movil/fondo-portfolio-tablet.webp);
+    background-position: cover;
+  }
+  .portfolioBody .inicio {
+    padding-top: 10px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .portfolioBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .portfolioBody .inicio .contenido-header h1 {
+    font-size: 0.9rem;
+    padding-left: 20px;
+  }
+  .portfolioBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 0.9rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .portfolioBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .portfolioBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .portfolioBody #portfolio {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 20% 80% 20%;
+    grid-template-areas: "h3 h3 h3" "fila fila fila" ". . .";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .portfolioBody #portfolio .titulo-seccion {
+    grid-area: h3;
+    color: #ff5080;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .portfolioBody #portfolio .fila {
+    grid-area: fila;
+    display: flex;
+    padding-left: 50px;
+  }
+  .portfolioBody #portfolio .fila .proyecto {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+  .portfolioBody #portfolio .fila .proyecto img {
+    width: 80%;
+    height: 40%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 0.5s;
+  }
+  .portfolioBody #portfolio .fila .proyecto:hover img {
+    filter: grayscale(0);
+  }
+  .portfolioBody #portfolio .fila .proyecto .info {
+    position: relative;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ff5080;
+    width: 80%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: 0.5s;
+  }
+  .portfolioBody #portfolio .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .portfolioBody {
+    background-image: url(../assets/img/developer.webp);
+    background-position: cover;
+  }
+  .portfolioBody .inicio {
+    padding-top: 12px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .portfolioBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .portfolioBody .inicio .contenido-header h1 {
+    font-size: 1rem;
+    padding-left: 20px;
+  }
+  .portfolioBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 1rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .portfolioBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .portfolioBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .portfolioBody #portfolio {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 20% 80% 20%;
+    grid-template-areas: "h3 h3 h3" "fila fila fila" ". . .";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .portfolioBody #portfolio .titulo-seccion {
+    grid-area: h3;
+    color: #ff5080;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .portfolioBody #portfolio .fila {
+    grid-area: fila;
+    display: flex;
+    padding-left: 50px;
+  }
+  .portfolioBody #portfolio .fila .proyecto {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+  .portfolioBody #portfolio .fila .proyecto img {
+    width: 90%;
+    height: 50%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 0.5s;
+  }
+  .portfolioBody #portfolio .fila .proyecto:hover img {
+    filter: grayscale(0);
+  }
+  .portfolioBody #portfolio .fila .proyecto .info {
+    position: relative;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ff5080;
+    width: 90%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: 0.5s;
+  }
+  .portfolioBody #portfolio .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  .portfolioBody {
+    background-image: url(../assets/img/developer.webp);
+    background-position: cover;
+  }
+  .portfolioBody .inicio {
+    padding-top: 12px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .portfolioBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .portfolioBody .inicio .contenido-header h1 {
+    font-size: 1.1rem;
+    padding-left: 20px;
+  }
+  .portfolioBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 1.1rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .portfolioBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .portfolioBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .portfolioBody #portfolio {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 20% 80% 20%;
+    grid-template-areas: "h3 h3 h3" "fila fila fila" ". . .";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .portfolioBody #portfolio .titulo-seccion {
+    grid-area: h3;
+    color: #ff5080;
+    font-size: 2.6rem;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .portfolioBody #portfolio .fila {
+    grid-area: fila;
+    display: flex;
+    padding-left: 50px;
+  }
+  .portfolioBody #portfolio .fila .proyecto {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+  .portfolioBody #portfolio .fila .proyecto img {
+    width: 90%;
+    height: 60%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 0.5s;
+  }
+  .portfolioBody #portfolio .fila .proyecto:hover img {
+    filter: grayscale(0);
+  }
+  .portfolioBody #portfolio .fila .proyecto .info {
+    position: relative;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ff5080;
+    width: 90%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: 0.5s;
+  }
+  .portfolioBody #portfolio .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolioBody {
+    background-image: url(../assets/img/developer.webp);
+    background-position: cover;
+  }
+  .portfolioBody .inicio {
+    padding-top: 14px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .portfolioBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .portfolioBody .inicio .contenido-header h1 {
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+  .portfolioBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .portfolioBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .portfolioBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .portfolioBody #portfolio {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 20% 80% 20%;
+    grid-template-areas: "h3 h3 h3" "fila fila fila" ". . .";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .portfolioBody #portfolio .titulo-seccion {
+    grid-area: h3;
+    color: #ff5080;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .portfolioBody #portfolio .fila {
+    grid-area: fila;
+    display: flex;
+    padding-left: 50px;
+  }
+  .portfolioBody #portfolio .fila .proyecto {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+  .portfolioBody #portfolio .fila .proyecto img {
+    width: 90%;
+    height: 60%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 0.5s;
+  }
+  .portfolioBody #portfolio .fila .proyecto:hover img {
+    filter: grayscale(0);
+  }
+  .portfolioBody #portfolio .fila .proyecto .info {
+    position: relative;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ff5080;
+    width: 90%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: 0.5s;
+  }
+  .portfolioBody #portfolio .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@media (min-width: 1400px) {
+  .portfolioBody {
+    background-image: url(../assets/img/developer.webp);
+    background-position: cover;
+  }
+  .portfolioBody .inicio {
+    padding-top: 14px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .portfolioBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .portfolioBody .inicio .contenido-header h1 {
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+  .portfolioBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .portfolioBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .portfolioBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .portfolioBody #portfolio {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 20% 80% 20%;
+    grid-template-areas: "h3 h3 h3" "fila fila fila" ". . .";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .portfolioBody #portfolio .titulo-seccion {
+    grid-area: h3;
+    color: #ff5080;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+  .portfolioBody #portfolio .fila {
+    grid-area: fila;
+    display: flex;
+    padding-left: 50px;
+  }
+  .portfolioBody #portfolio .fila .proyecto {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+  .portfolioBody #portfolio .fila .proyecto img {
+    width: 90%;
+    height: 60%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 0.5s;
+  }
+  .portfolioBody #portfolio .fila .proyecto:hover img {
+    filter: grayscale(0);
+  }
+  .portfolioBody #portfolio .fila .proyecto .info {
+    position: relative;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ff5080;
+    width: 90%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: 0.5s;
+  }
+  .portfolioBody #portfolio .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+.contactoBody {
+  background-image: url(../assets/img/fondo-contacto.webp);
+  background-position: cover;
+}
+.contactoBody .inicio {
+  padding-top: 14px;
   grid-area: inicio;
   background-color: rgba(0, 0, 0, 0.4588235294);
   height: 100%;
 }
-.inicio .contenido-header {
+.contactoBody .inicio .contenido-header {
   display: flex;
   justify-content: space-between;
   color: #ff5080;
 }
-.inicio .contenido-header h1 {
+.contactoBody .inicio .contenido-header h1 {
   font-size: 1.2rem;
   padding-left: 20px;
 }
-.inicio .contenido-header #links {
+.contactoBody .inicio .contenido-header #links {
   list-style-type: none;
   display: flex;
   font-size: 1.2rem;
@@ -1915,33 +3484,29 @@
   padding-left: 20px;
   text-decoration: none;
 }
-.inicio .contenido-header #links a {
+.contactoBody .inicio .contenido-header #links a {
   padding-right: 15px;
   color: #fff;
   text-decoration: none;
 }
-.inicio .contenido-header #links a:hover {
+.contactoBody .inicio .contenido-header #links a:hover {
   color: #ff5080;
   text-shadow: 1px 1px 2px #fff;
 }
-
-.contactoBody {
-  background-image: url(../assets/img/fondo-contacto.jpg);
-  background-position: cover;
-}
-
-#contacto {
+.contactoBody #contacto {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: auto auto;
   grid-template-areas: "titulo" "form";
   width: 100%;
   height: 100vh;
   margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
   align-content: stretch;
   justify-content: stretch;
 }
-#contacto .titulo-seccion {
+.contactoBody #contacto .titulo-seccion {
   grid-area: titulo;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -1954,31 +3519,30 @@
   text-transform: uppercase;
   color: #ff5080;
 }
-#contacto .contenedor-form form {
+.contactoBody #contacto .contenedor-form {
   grid-area: form;
   width: 100%;
   height: 100%;
 }
-#contacto .contenedor-form form input,
-#contacto .contenedor-form form textarea {
+.contactoBody #contacto .contenedor-form input,
+.contactoBody #contacto .contenedor-form textarea {
   background-color: rgba(255, 255, 255, 0.7882352941);
   padding: 10px;
   border-radius: 20px;
   border: none;
   border: 1px solid #ff5080;
 }
-#contacto .contenedor-form form .input-mitad {
+.contactoBody #contacto .contenedor-form .input-mitad {
   font-size: 1rem;
-  color: #ff5080;
   text-shadow: 1px 1px 2px #000000;
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 49%;
+  color: #ff5080;
 }
-#contacto .contenedor-form form #input-mitad2 {
+.contactoBody #contacto .contenedor-form #input-mitad2 {
   margin-left: 20px;
 }
-#contacto .contenedor-form form .input-full {
+.contactoBody #contacto .contenedor-form .input-full {
   font-size: 1rem;
   color: #ff5080;
   text-shadow: 1px 1px 2px #000000;
@@ -1986,7 +3550,7 @@
   margin-bottom: 20px;
   width: 100%;
 }
-#contacto .contenedor-form form .btn-enviar {
+.contactoBody #contacto .contenedor-form .btn-enviar {
   font-size: 1.2rem;
   color: #ff5080;
   border-color: #ff5080;
@@ -1997,13 +3561,804 @@
   transition: 0.1s;
   padding: 10px 15px;
 }
-#contacto .contenedor-form form .btn-enviar:hover {
+.contactoBody #contacto .contenedor-form .btn-enviar:hover {
   background-color: #ff5080;
   color: #fff;
   border-color: #fff;
   text-shadow: 2px 2px 3px #000000;
 }
 
+@media (min-width: 320px) {
+  .contactoBody {
+    background-image: url(../assets/img/fondo-contacto.webp);
+    background-position: cover;
+  }
+  .contactoBody .inicio {
+    padding-top: 10px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .contactoBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .contactoBody .inicio .contenido-header h1 {
+    font-size: 0.7rem;
+    padding-left: 20px;
+  }
+  .contactoBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 0.7rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .contactoBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .contactoBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .contactoBody #contacto {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "titulo" "form";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .contactoBody #contacto .titulo-seccion {
+    grid-area: titulo;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px #ffffff;
+    text-transform: uppercase;
+    color: #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form {
+    grid-area: form;
+    width: 100%;
+    height: 100%;
+  }
+  .contactoBody #contacto .contenedor-form input,
+  .contactoBody #contacto .contenedor-form textarea {
+    background-color: rgba(255, 255, 255, 0.7882352941);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form .input-mitad {
+    width: 45%;
+    font-size: 0.3rem;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form #input-mitad2 {
+    margin-left: 20px;
+  }
+  .contactoBody #contacto .contenedor-form .input-full {
+    font-size: 0.3rem;
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .contactoBody #contacto .contenedor-form .btn-enviar {
+    font-size: 0.6rem;
+    color: #ff5080;
+    border-color: #ff5080;
+    text-shadow: 1px 1px 2px #000000;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.1s;
+    padding: 10px 15px;
+  }
+  .contactoBody #contacto .contenedor-form .btn-enviar:hover {
+    background-color: #ff5080;
+    color: #fff;
+    border-color: #fff;
+    text-shadow: 2px 2px 3px #000000;
+  }
+}
+@media (min-width: 375px) {
+  .contactoBody {
+    background-image: url(../assets/img/fondo-contacto.webp);
+    background-position: cover;
+  }
+  .contactoBody .inicio {
+    padding-top: 10px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .contactoBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .contactoBody .inicio .contenido-header h1 {
+    font-size: 0.8rem;
+    padding-left: 20px;
+  }
+  .contactoBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 0.8rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .contactoBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .contactoBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .contactoBody #contacto {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "titulo" "form";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .contactoBody #contacto .titulo-seccion {
+    grid-area: titulo;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px #ffffff;
+    text-transform: uppercase;
+    color: #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form {
+    grid-area: form;
+    width: 100%;
+    height: 100%;
+  }
+  .contactoBody #contacto .contenedor-form input,
+  .contactoBody #contacto .contenedor-form textarea {
+    background-color: rgba(255, 255, 255, 0.7882352941);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form .input-mitad {
+    width: 45%;
+    font-size: 0.4rem;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form #input-mitad2 {
+    margin-left: 20px;
+  }
+  .contactoBody #contacto .contenedor-form .input-full {
+    font-size: 0.4rem;
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .contactoBody #contacto .contenedor-form .btn-enviar {
+    font-size: 0.8rem;
+    color: #ff5080;
+    border-color: #ff5080;
+    text-shadow: 1px 1px 2px #000000;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.1s;
+    padding: 10px 15px;
+  }
+  .contactoBody #contacto .contenedor-form .btn-enviar:hover {
+    background-color: #ff5080;
+    color: #fff;
+    border-color: #fff;
+    text-shadow: 2px 2px 3px #000000;
+  }
+}
+@media (min-width: 576px) {
+  .contactoBody {
+    background-image: url(../assets/img/fondo-contacto.webp);
+    background-position: cover;
+  }
+  .contactoBody .inicio {
+    padding-top: 10px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .contactoBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .contactoBody .inicio .contenido-header h1 {
+    font-size: 0.9rem;
+    padding-left: 20px;
+  }
+  .contactoBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 0.9rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .contactoBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .contactoBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .contactoBody #contacto {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "titulo" "form";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .contactoBody #contacto .titulo-seccion {
+    grid-area: titulo;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px #ffffff;
+    text-transform: uppercase;
+    color: #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form {
+    grid-area: form;
+    width: 100%;
+    height: 100%;
+  }
+  .contactoBody #contacto .contenedor-form input,
+  .contactoBody #contacto .contenedor-form textarea {
+    background-color: rgba(255, 255, 255, 0.7882352941);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form .input-mitad {
+    width: 45%;
+    font-size: 0.6rem;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form #input-mitad2 {
+    margin-left: 20px;
+  }
+  .contactoBody #contacto .contenedor-form .input-full {
+    font-size: 0.6rem;
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .contactoBody #contacto .contenedor-form .btn-enviar {
+    font-size: 1rem;
+    color: #ff5080;
+    border-color: #ff5080;
+    text-shadow: 1px 1px 2px #000000;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.1s;
+    padding: 10px 15px;
+  }
+  .contactoBody #contacto .contenedor-form .btn-enviar:hover {
+    background-color: #ff5080;
+    color: #fff;
+    border-color: #fff;
+    text-shadow: 2px 2px 3px #000000;
+  }
+}
+@media (min-width: 768px) {
+  .contactoBody {
+    background-image: url(../assets/img/fondo-contacto.webp);
+    background-position: cover;
+  }
+  .contactoBody .inicio {
+    padding-top: 12px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .contactoBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .contactoBody .inicio .contenido-header h1 {
+    font-size: 1rem;
+    padding-left: 20px;
+  }
+  .contactoBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 1rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .contactoBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .contactoBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .contactoBody #contacto {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "titulo" "form";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .contactoBody #contacto .titulo-seccion {
+    grid-area: titulo;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px #ffffff;
+    text-transform: uppercase;
+    color: #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form {
+    grid-area: form;
+    width: 100%;
+    height: 100%;
+  }
+  .contactoBody #contacto .contenedor-form input,
+  .contactoBody #contacto .contenedor-form textarea {
+    background-color: rgba(255, 255, 255, 0.7882352941);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form .input-mitad {
+    width: 45%;
+    font-size: 0.6rem;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form #input-mitad2 {
+    margin-left: 20px;
+  }
+  .contactoBody #contacto .contenedor-form .input-full {
+    font-size: 0.6rem;
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .contactoBody #contacto .contenedor-form .btn-enviar {
+    font-size: 1rem;
+    color: #ff5080;
+    border-color: #ff5080;
+    text-shadow: 1px 1px 2px #000000;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.1s;
+    padding: 10px 15px;
+  }
+  .contactoBody #contacto .contenedor-form .btn-enviar:hover {
+    background-color: #ff5080;
+    color: #fff;
+    border-color: #fff;
+    text-shadow: 2px 2px 3px #000000;
+  }
+}
+@media (min-width: 992px) {
+  .contactoBody {
+    background-image: url(../assets/img/fondo-contacto.webp);
+    background-position: cover;
+  }
+  .contactoBody .inicio {
+    padding-top: 12px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .contactoBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .contactoBody .inicio .contenido-header h1 {
+    font-size: 1.1rem;
+    padding-left: 20px;
+  }
+  .contactoBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 1.1rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .contactoBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .contactoBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .contactoBody #contacto {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "titulo" "form";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .contactoBody #contacto .titulo-seccion {
+    grid-area: titulo;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px #ffffff;
+    text-transform: uppercase;
+    color: #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form {
+    grid-area: form;
+    width: 100%;
+    height: 100%;
+  }
+  .contactoBody #contacto .contenedor-form input,
+  .contactoBody #contacto .contenedor-form textarea {
+    background-color: rgba(255, 255, 255, 0.7882352941);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form .input-mitad {
+    width: 45%;
+    font-size: 0.8rem;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form #input-mitad2 {
+    margin-left: 20px;
+  }
+  .contactoBody #contacto .contenedor-form .input-full {
+    font-size: 0.8rem;
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .contactoBody #contacto .contenedor-form .btn-enviar {
+    font-size: 1.2rem;
+    color: #ff5080;
+    border-color: #ff5080;
+    text-shadow: 1px 1px 2px #000000;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.1s;
+    padding: 10px 15px;
+  }
+  .contactoBody #contacto .contenedor-form .btn-enviar:hover {
+    background-color: #ff5080;
+    color: #fff;
+    border-color: #fff;
+    text-shadow: 2px 2px 3px #000000;
+  }
+}
+@media (min-width: 1200px) {
+  .contactoBody {
+    background-image: url(../assets/img/fondo-contacto.webp);
+    background-position: cover;
+  }
+  .contactoBody .inicio {
+    padding-top: 14px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .contactoBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .contactoBody .inicio .contenido-header h1 {
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+  .contactoBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .contactoBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .contactoBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .contactoBody #contacto {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "titulo" "form";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .contactoBody #contacto .titulo-seccion {
+    grid-area: titulo;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px #ffffff;
+    text-transform: uppercase;
+    color: #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form {
+    grid-area: form;
+    width: 100%;
+    height: 100%;
+  }
+  .contactoBody #contacto .contenedor-form input,
+  .contactoBody #contacto .contenedor-form textarea {
+    background-color: rgba(255, 255, 255, 0.7882352941);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form .input-mitad {
+    width: 49%;
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form #input-mitad2 {
+    margin-left: 20px;
+  }
+  .contactoBody #contacto .contenedor-form .input-full {
+    font-size: 1rem;
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .contactoBody #contacto .contenedor-form .btn-enviar {
+    font-size: 1.2rem;
+    color: #ff5080;
+    border-color: #ff5080;
+    text-shadow: 1px 1px 2px #000000;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.1s;
+    padding: 10px 15px;
+  }
+  .contactoBody #contacto .contenedor-form .btn-enviar:hover {
+    background-color: #ff5080;
+    color: #fff;
+    border-color: #fff;
+    text-shadow: 2px 2px 3px #000000;
+  }
+}
+@media (min-width: 1400px) {
+  .contactoBody {
+    background-image: url(../assets/img/fondo-contacto.webp);
+    background-position: cover;
+  }
+  .contactoBody .inicio {
+    padding-top: 14px;
+    grid-area: inicio;
+    background-color: rgba(0, 0, 0, 0.4588235294);
+    height: 100%;
+  }
+  .contactoBody .inicio .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ff5080;
+  }
+  .contactoBody .inicio .contenido-header h1 {
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+  .contactoBody .inicio .contenido-header #links {
+    list-style-type: none;
+    display: flex;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .contactoBody .inicio .contenido-header #links a {
+    padding-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .contactoBody .inicio .contenido-header #links a:hover {
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #fff;
+  }
+  .contactoBody #contacto {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "titulo" "form";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+  .contactoBody #contacto .titulo-seccion {
+    grid-area: titulo;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px #ffffff;
+    text-transform: uppercase;
+    color: #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form {
+    grid-area: form;
+    width: 100%;
+    height: 100%;
+  }
+  .contactoBody #contacto .contenedor-form input,
+  .contactoBody #contacto .contenedor-form textarea {
+    background-color: rgba(255, 255, 255, 0.7882352941);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form .input-mitad {
+    width: 49%;
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ff5080;
+  }
+  .contactoBody #contacto .contenedor-form #input-mitad2 {
+    margin-left: 20px;
+  }
+  .contactoBody #contacto .contenedor-form .input-full {
+    font-size: 1rem;
+    color: #ff5080;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .contactoBody #contacto .contenedor-form .btn-enviar {
+    font-size: 2rem;
+    color: #ff5080;
+    border-color: #ff5080;
+    text-shadow: 1px 1px 2px #000000;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.1s;
+    padding: 10px 15px;
+  }
+  .contactoBody #contacto .contenedor-form .btn-enviar:hover {
+    background-color: #ff5080;
+    color: #fff;
+    border-color: #fff;
+    text-shadow: 2px 2px 3px #000000;
+  }
+}
 footer {
   grid-area: footer;
   padding-top: 15px;

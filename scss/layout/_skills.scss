@@ -1,144 +1,575 @@
-.inicio {
-    padding-top: 24px;
-    grid-area: inicio;
-    background-color: $secondary-color;
-    height: 100%;
+.skillsBody {
+    background-image: url(../assets/img/fondo-skills.webp);
+    background-position: cover;
+    
+    @include header1200;
 
-    .contenido-header {
-        display: flex;
-        justify-content: space-between;
-        color: $primary-color;
-
-        h1 {
-            font-size: 1.2rem;
-            padding-left: 20px;
+    #skills {
+        @include displaySkills;
+    
+        .skillTitulo {
+            @include tituloSkill(2.8rem);
+        } 
+    
+        .lista {
+            @include listaSkill(1.8rem);
         }
-
-        #links {
-            list-style-type: none;
-            display: flex;
-            font-size: 1.2rem;
-            padding-right: 20px;
-            padding-left: 20px;
-            text-decoration: none;
         
-            a {
-                padding-right: 15px;
-                color: #fff;
-                text-decoration: none;
+        .porcentaje {
+            @include porcentajeSkill(1.8rem);
+        }
+    
+        #skill1 {
+            @include skill;
+            grid-area: skill1;
         
-                &:hover {
-                    color: $primary-color;
-                    text-shadow: 1px 1px 2px #fff;
+            .barra {
+        
+                .barra-progreso1 {
+                    @include barraProgreso(80%);
+                }
+            }
+        }
+        
+        #skill2{
+            @include skill;
+            grid-area: skill2;
+            
+            .barra {
+        
+                .barra-progreso2 {
+                    @include barraProgreso(60%);
+                }
+            }
+        }
+        
+        #skill3 {
+            @include skill;
+            grid-area: skill3;  
+            
+            .barra {
+        
+                .barra-progreso3 {
+                    @include barraProgreso(40%);
+                }
+            }
+        }
+        
+        #skill4 {
+            @include skill;
+            grid-area: skill4;
+    
+            .barra {
+        
+                .barra-progreso4 {
+                    @include barraProgreso(10%);
                 }
             }
         }
     }
 }
 
-.skillsBody {
-    background-image: url(../assets/img/fondo-skills.jpg);
-    background-position: cover;
+@media (min-width: $mediaMobile-320) {
+    .skillsBody {
+        background-image: url(../assets/img/movil/fondo-skills-movil.webp);
+        background-position: cover;
+    
+        @include header320;
+    
+        #skills {
+            @include displaySkills;
+        
+            .skillTitulo {
+                @include tituloSkill(1.5rem);
+            } 
+        
+            .lista {
+                @include listaSkill(1.3rem);
+            }
+            
+            .porcentaje {
+                @include porcentajeSkill(1.3rem);
+            }
+        
+            #skill1 {
+                @include skill;
+                grid-area: skill1;
+            
+                .barra {
+            
+                    .barra-progreso1 {
+                        @include barraProgreso(80%);
+                    }
+                }
+            }
+            
+            #skill2{
+                @include skill;
+                grid-area: skill2;
+                
+                .barra {
+            
+                    .barra-progreso2 {
+                        @include barraProgreso(60%);
+                    }
+                }
+            }
+            
+            #skill3 {
+                @include skill;
+                grid-area: skill3;  
+                
+                .barra {
+            
+                    .barra-progreso3 {
+                        @include barraProgreso(40%);
+                    }
+                }
+            }
+            
+            #skill4 {
+                @include skill;
+                grid-area: skill4;
+        
+                .barra {
+            
+                    .barra-progreso4 {
+                        @include barraProgreso(10%);
+                    }
+                }
+            }
+        }
+    }
 }
-
-#skills {
-    display: grid;
-    grid-template-rows: repeat(6 1fr);
-    grid-template-areas: 
-    "titulo"
-    "skill1"
-    "skill2"
-    "skill3"
-    "skill4"
-    ".";
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    align-content: stretch;
-    justify-content: stretch;
-
-    & .skillTitulo {
-        color: $primary-color;
-        font-size: 2.8rem;
-        font-weight: bolder;
-        text-align: center;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        grid-area: titulo;
-        text-shadow: 3px 3px 4px #ffffff;
-    } 
-
-    .lista {
-        color: $primary-color;
-        font-size: 1.8rem;
-        font-weight: bold;
-        margin-top: 3px;
-        margin-bottom: 3px;
-        text-shadow: 2px 2px 3px #ffffff;
-    }
+@media (min-width: $mediaMobile-375) {
+    .skillsBody {
+        background-image: url(../assets/img/movil/fondo-skills-movil.webp);
+        background-position: cover;
     
-    .porcentaje {
-        color: $primary-color;
-        font-size: 1.8rem;
-        font-weight: bold;
-        margin-top: 3px;
-        margin-bottom: 3px;
-        text-shadow: 2px 2px 3px #ffffff;
-    }
-
-    #skill1 {
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        grid-area: skill1; 
-
-        .barra .barra-progreso1 {
-            background: linear-gradient(90deg, rgba(252,255,220,1) 0%, rgba(247,255,121,1) 35%, rgba(249,255,0,1) 100%);
-            background-repeat: no-repeat;
-            width: 80%;
-            height: 8px;
-        }
-    }
+        @include header375;
     
-    #skill2{
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        grid-area: skill2;
+        #skills {
+            @include displaySkills;
         
-        .barra .barra-progreso2 {
-            background: linear-gradient(90deg, rgba(252,255,220,1) 0%, rgba(247,255,121,1) 35%, rgba(249,255,0,1) 100%);
-            background-repeat: no-repeat;
-            width: 60%;
-            height: 8px;
-        }
-    }
-    
-    #skill3 {
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        grid-area: skill3;  
+            .skillTitulo {
+                @include tituloSkill(1.7rem);
+            } 
         
-        .barra .barra-progreso3 {
-            background: linear-gradient(90deg, rgba(252,255,220,1) 0%, rgba(247,255,121,1) 35%, rgba(249,255,0,1) 100%);
-            background-repeat: no-repeat;
-            width: 40%;
-            height: 8px;
+            .lista {
+                @include listaSkill(1.3rem);
+            }
+            
+            .porcentaje {
+                @include porcentajeSkill(1.3rem);
+            }
+        
+            #skill1 {
+                @include skill;
+                grid-area: skill1;
+            
+                .barra {
+            
+                    .barra-progreso1 {
+                        @include barraProgreso(80%);
+                    }
+                }
+            }
+            
+            #skill2{
+                @include skill;
+                grid-area: skill2;
+                
+                .barra {
+            
+                    .barra-progreso2 {
+                        @include barraProgreso(60%);
+                    }
+                }
+            }
+            
+            #skill3 {
+                @include skill;
+                grid-area: skill3;  
+                
+                .barra {
+            
+                    .barra-progreso3 {
+                        @include barraProgreso(40%);
+                    }
+                }
+            }
+            
+            #skill4 {
+                @include skill;
+                grid-area: skill4;
+        
+                .barra {
+            
+                    .barra-progreso4 {
+                        @include barraProgreso(10%);
+                    }
+                }
+            }
         }
     }
+}
+@media (min-width: $mediaTablet-576) {
+    .skillsBody {
+        background-image: url(../assets/img/movil/fondo-skills-tablet.webp);
+        background-position: cover;
     
-    #skill4 {
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        grid-area: skill4;
-
-        .barra .barra-progreso4 {
-            background: linear-gradient(90deg, rgba(252,255,220,1) 0%, rgba(247,255,121,1) 35%, rgba(249,255,0,1) 100%);
-            background-repeat: no-repeat;
-            width: 10%;
-            height: 8px;
+        @include header576;
+    
+        #skills {
+            @include displaySkills;
+        
+            .skillTitulo {
+                @include tituloSkill(1.7rem);
+            } 
+        
+            .lista {
+                @include listaSkill(1.3rem);
+            }
+            
+            .porcentaje {
+                @include porcentajeSkill(1.3rem);
+            }
+        
+            #skill1 {
+                @include skill;
+                grid-area: skill1;
+            
+                .barra {
+            
+                    .barra-progreso1 {
+                        @include barraProgreso(80%);
+                    }
+                }
+            }
+            
+            #skill2{
+                @include skill;
+                grid-area: skill2;
+                
+                .barra {
+            
+                    .barra-progreso2 {
+                        @include barraProgreso(60%);
+                    }
+                }
+            }
+            
+            #skill3 {
+                @include skill;
+                grid-area: skill3;  
+                
+                .barra {
+            
+                    .barra-progreso3 {
+                        @include barraProgreso(40%);
+                    }
+                }
+            }
+            
+            #skill4 {
+                @include skill;
+                grid-area: skill4;
+        
+                .barra {
+            
+                    .barra-progreso4 {
+                        @include barraProgreso(10%);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaTablet-768) {
+    .skillsBody {
+        background-image: url(../assets/img/movil/fondo-skills-tablet.webp);
+        background-position: cover;
+    
+        @include header768;
+    
+        #skills {
+            @include displaySkills;
+        
+            .skillTitulo {
+                @include tituloSkill(2rem);
+            } 
+        
+            .lista {
+                @include listaSkill(1.5rem);
+            }
+            
+            .porcentaje {
+                @include porcentajeSkill(1.5rem);
+            }
+        
+            #skill1 {
+                @include skill;
+                grid-area: skill1;
+            
+                .barra {
+            
+                    .barra-progreso1 {
+                        @include barraProgreso(80%);
+                    }
+                }
+            }
+            
+            #skill2{
+                @include skill;
+                grid-area: skill2;
+                
+                .barra {
+            
+                    .barra-progreso2 {
+                        @include barraProgreso(60%);
+                    }
+                }
+            }
+            
+            #skill3 {
+                @include skill;
+                grid-area: skill3;  
+                
+                .barra {
+            
+                    .barra-progreso3 {
+                        @include barraProgreso(40%);
+                    }
+                }
+            }
+            
+            #skill4 {
+                @include skill;
+                grid-area: skill4;
+        
+                .barra {
+            
+                    .barra-progreso4 {
+                        @include barraProgreso(10%);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaDesktop-992) {
+    .skillsBody {
+        background-image: url(../assets/img/fondo-skills.webp);
+        background-position: cover;
+    
+        @include header992;
+    
+        #skills {
+            @include displaySkills;
+        
+            .skillTitulo {
+                @include tituloSkill(2rem);
+            } 
+        
+            .lista {
+                @include listaSkill(1.5rem);
+            }
+            
+            .porcentaje {
+                @include porcentajeSkill(1.5rem);
+            }
+        
+            #skill1 {
+                @include skill;
+                grid-area: skill1;
+            
+                .barra {
+            
+                    .barra-progreso1 {
+                        @include barraProgreso(80%);
+                    }
+                }
+            }
+            
+            #skill2{
+                @include skill;
+                grid-area: skill2;
+                
+                .barra {
+            
+                    .barra-progreso2 {
+                        @include barraProgreso(60%);
+                    }
+                }
+            }
+            
+            #skill3 {
+                @include skill;
+                grid-area: skill3;  
+                
+                .barra {
+            
+                    .barra-progreso3 {
+                        @include barraProgreso(40%);
+                    }
+                }
+            }
+            
+            #skill4 {
+                @include skill;
+                grid-area: skill4;
+        
+                .barra {
+            
+                    .barra-progreso4 {
+                        @include barraProgreso(10%);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaDesktop-1200) {
+    .skillsBody {
+        background-image: url(../assets/img/fondo-skills.webp);
+        background-position: cover;
+    
+        @include header1200;
+    
+        #skills {
+            @include displaySkills;
+        
+            .skillTitulo {
+                @include tituloSkill(2.8rem);
+            } 
+        
+            .lista {
+                @include listaSkill(1.8rem);
+            }
+            
+            .porcentaje {
+                @include porcentajeSkill(1.8rem);
+            }
+        
+            #skill1 {
+                @include skill;
+                grid-area: skill1;
+            
+                .barra {
+            
+                    .barra-progreso1 {
+                        @include barraProgreso(80%);
+                    }
+                }
+            }
+            
+            #skill2{
+                @include skill;
+                grid-area: skill2;
+                
+                .barra {
+            
+                    .barra-progreso2 {
+                        @include barraProgreso(60%);
+                    }
+                }
+            }
+            
+            #skill3 {
+                @include skill;
+                grid-area: skill3;  
+                
+                .barra {
+            
+                    .barra-progreso3 {
+                        @include barraProgreso(40%);
+                    }
+                }
+            }
+            
+            #skill4 {
+                @include skill;
+                grid-area: skill4;
+        
+                .barra {
+            
+                    .barra-progreso4 {
+                        @include barraProgreso(10%);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $mediaDesktop-1400) {
+    .skillsBody {
+        background-image: url(../assets/img/fondo-skills.webp);
+        background-position: cover;
+    
+        @include header1200;
+    
+        #skills {
+            @include displaySkills;
+        
+            .skillTitulo {
+                @include tituloSkill(3rem);
+            } 
+        
+            .lista {
+                @include listaSkill(2rem);
+            }
+            
+            .porcentaje {
+                @include porcentajeSkill(2rem);
+            }
+        
+            #skill1 {
+                @include skill;
+                grid-area: skill1;
+            
+                .barra {
+            
+                    .barra-progreso1 {
+                        @include barraProgreso(80%);
+                    }
+                }
+            }
+            
+            #skill2{
+                @include skill;
+                grid-area: skill2;
+                
+                .barra {
+            
+                    .barra-progreso2 {
+                        @include barraProgreso(60%);
+                    }
+                }
+            }
+            
+            #skill3 {
+                @include skill;
+                grid-area: skill3;  
+                
+                .barra {
+            
+                    .barra-progreso3 {
+                        @include barraProgreso(40%);
+                    }
+                }
+            }
+            
+            #skill4 {
+                @include skill;
+                grid-area: skill4;
+        
+                .barra {
+            
+                    .barra-progreso4 {
+                        @include barraProgreso(10%);
+                    }
+                }
+            }
         }
     }
 }
