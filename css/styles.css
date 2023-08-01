@@ -68,6 +68,22 @@
   padding-bottom: 20px;
   text-shadow: 6px 6px 8px #000000;
 }
+#presentacion .presentacion .tracking-in-contract {
+  animation: tracking-in-contract 0.8s linear both;
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 0.6em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
 #presentacion .presentacion h2 {
   font-size: 2.6rem;
   text-align: center;
@@ -198,8 +214,8 @@
     margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    color: #fff;
-    text-shadow: 1px 1px 2px #000000;
+    color: #ff5080;
+    text-shadow: 2px 2px 2px #000000;
   }
   #gridInicio #presentacion .presentacion .button {
     height: 50%;
@@ -308,8 +324,8 @@
     margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    color: #fff;
-    text-shadow: 1px 1px 2px #000000;
+    color: #ff5080;
+    text-shadow: 2px 2px 2px #000000;
   }
   #gridInicio #presentacion .presentacion .button {
     height: 50%;
@@ -418,8 +434,8 @@
     margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    color: #fff;
-    text-shadow: 1px 1px 2px #000000;
+    color: #ff5080;
+    text-shadow: 2px 2px 2px #000000;
   }
   #gridInicio #presentacion .presentacion .button {
     height: 50%;
@@ -528,8 +544,8 @@
     margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    color: #fff;
-    text-shadow: 1px 1px 2px #000000;
+    color: #ff5080;
+    text-shadow: 2px 2px 2px #000000;
   }
   #gridInicio #presentacion .presentacion .button {
     height: 50%;
@@ -928,7 +944,7 @@
   .sobreMiBody #sobremi {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 35% 65%;
+    grid-template-rows: 40% 60%;
     grid-template-areas: "contenedorFoto" "sobremi";
     row-gap: 0;
     width: 100%;
@@ -946,7 +962,7 @@
   .sobreMiBody #sobremi .contenedor-foto img {
     height: 60%;
     width: 50%;
-    border-radius: 10%;
+    border-radius: 60px;
     border: 6px solid rgba(0, 0, 0, 0.4588235294);
   }
   .sobreMiBody #sobremi .sobremi {
@@ -955,9 +971,10 @@
   }
   .sobreMiBody #sobremi .sobremi #titulo-seccion {
     font-size: 1.4rem;
+    margin-top: 20px;
     font-weight: bolder;
     color: #ff5080;
-    text-shadow: 1px 1px 2px #000000;
+    text-shadow: 2px 2px 2px #000000;
   }
   .sobreMiBody #sobremi .sobremi h2 {
     font-size: 1.2rem;
@@ -967,7 +984,7 @@
   }
   .sobreMiBody #sobremi .sobremi h2 .spanSobremi {
     color: #ff5080;
-    text-shadow: 1px 1px 2px #000000;
+    text-shadow: 3px 3px 3px #000000;
   }
   .sobreMiBody #sobremi .sobremi h3 {
     font-size: 1.1rem;
@@ -982,8 +999,8 @@
     margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    color: #fff;
-    text-shadow: 1px 1px 2px #000000;
+    color: #ff5080;
+    text-shadow: 2px 2px 2px #000000;
   }
   .sobreMiBody #sobremi .sobremi .buttonDescargar {
     margin-top: 20px;
@@ -1046,7 +1063,7 @@
   .sobreMiBody #sobremi {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 35% 65%;
+    grid-template-rows: 40% 60%;
     grid-template-areas: "contenedorFoto" "sobremi";
     row-gap: 0;
     width: 100%;
@@ -1063,7 +1080,7 @@
   .sobreMiBody #sobremi .contenedor-foto img {
     height: 60%;
     width: 50%;
-    border-radius: 10%;
+    border-radius: 60px;
     border: 6px solid rgba(0, 0, 0, 0.4588235294);
   }
   .sobreMiBody #sobremi .sobremi {
@@ -1072,9 +1089,10 @@
   }
   .sobreMiBody #sobremi .sobremi #titulo-seccion {
     font-size: 1.4rem;
+    margin-top: 20px;
     font-weight: bolder;
     color: #ff5080;
-    text-shadow: 1px 1px 2px #000000;
+    text-shadow: 2px 2px 2px #000000;
   }
   .sobreMiBody #sobremi .sobremi h2 {
     font-size: 1.2rem;
@@ -1098,8 +1116,8 @@
     margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    color: #fff;
-    text-shadow: 1px 1px 2px #000000;
+    color: #ff5080;
+    text-shadow: 2px 2px 2px #000000;
   }
   .sobreMiBody #sobremi .sobremi .buttonDescargar {
     margin-top: 20px;
@@ -1162,7 +1180,7 @@
   .sobreMiBody #sobremi {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 35% 65%;
+    grid-template-rows: 40% 60%;
     grid-template-areas: "contenedorFoto" "sobremi";
     row-gap: 0;
     width: 100%;
@@ -1181,7 +1199,7 @@
     margin-top: 40px;
     height: 80%;
     width: 30%;
-    border-radius: 10%;
+    border-radius: 60px;
     border: 6px solid rgba(0, 0, 0, 0.4588235294);
   }
   .sobreMiBody #sobremi .sobremi {
@@ -1190,9 +1208,10 @@
   }
   .sobreMiBody #sobremi .sobremi #titulo-seccion {
     font-size: 1.6rem;
+    margin-top: 20px;
     font-weight: bolder;
     color: #ff5080;
-    text-shadow: 1px 1px 2px #000000;
+    text-shadow: 2px 2px 2px #000000;
   }
   .sobreMiBody #sobremi .sobremi h2 {
     font-size: 1.4rem;
@@ -1216,8 +1235,8 @@
     margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    color: #fff;
-    text-shadow: 1px 1px 2px #000000;
+    color: #ff5080;
+    text-shadow: 2px 2px 2px #000000;
   }
   .sobreMiBody #sobremi .sobremi .buttonDescargar {
     margin-top: 10px;
@@ -1280,7 +1299,7 @@
   .sobreMiBody #sobremi {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 35% 65%;
+    grid-template-rows: 40% 60%;
     grid-template-areas: "contenedorFoto" "sobremi";
     row-gap: 0;
     width: 100%;
@@ -1297,7 +1316,7 @@
   .sobreMiBody #sobremi .contenedor-foto img {
     height: 80%;
     width: 30%;
-    border-radius: 10%;
+    border-radius: 60px;
     border: 6px solid rgba(0, 0, 0, 0.4588235294);
   }
   .sobreMiBody #sobremi .sobremi {
@@ -1307,9 +1326,10 @@
   .sobreMiBody #sobremi .sobremi #titulo-seccion {
     font-size: 1.6rem;
     margin-bottom: 0px;
+    margin-top: 20px;
     font-weight: bolder;
     color: #ff5080;
-    text-shadow: 1px 1px 2px #000000;
+    text-shadow: 2px 2px 2px #000000;
   }
   .sobreMiBody #sobremi .sobremi h2 {
     font-size: 1.4rem;
@@ -1336,8 +1356,8 @@
     margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    color: #fff;
-    text-shadow: 1px 1px 2px #000000;
+    color: #ff5080;
+    text-shadow: 2px 2px 2px #000000;
   }
   .sobreMiBody #sobremi .sobremi .buttonDescargar {
     margin-top: 20px;
@@ -1400,7 +1420,7 @@
   .sobreMiBody #sobremi {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 35% 65%;
+    grid-template-rows: 40% 60%;
     grid-template-areas: "contenedorFoto" "sobremi";
     row-gap: 0;
     width: 100%;
@@ -1415,9 +1435,9 @@
     border-radius: 10%;
   }
   .sobreMiBody #sobremi .contenedor-foto img {
-    height: 80%;
+    height: 90%;
     width: 20%;
-    border-radius: 10%;
+    border-radius: 60px;
     border: 6px solid rgba(0, 0, 0, 0.4588235294);
   }
   .sobreMiBody #sobremi .sobremi {
@@ -1426,9 +1446,10 @@
   }
   .sobreMiBody #sobremi .sobremi #titulo-seccion {
     font-size: 1.8rem;
+    margin-top: 20px;
     font-weight: bolder;
     color: #ff5080;
-    text-shadow: 1px 1px 2px #000000;
+    text-shadow: 2px 2px 2px #000000;
   }
   .sobreMiBody #sobremi .sobremi h2 {
     font-size: 1.6rem;
@@ -1451,8 +1472,8 @@
     margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    color: #fff;
-    text-shadow: 1px 1px 2px #000000;
+    color: #ff5080;
+    text-shadow: 2px 2px 2px #000000;
   }
   .sobreMiBody #sobremi .sobremi .buttonDescargar {
     margin-top: 10px;
@@ -1515,7 +1536,7 @@
   .sobreMiBody #sobremi {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 35% 65%;
+    grid-template-rows: 40% 60%;
     grid-template-areas: "contenedorFoto" "sobremi";
     row-gap: 0;
     width: 100%;
@@ -1530,9 +1551,9 @@
     border-radius: 10%;
   }
   .sobreMiBody #sobremi .contenedor-foto img {
-    height: 80%;
+    height: 90%;
     width: 20%;
-    border-radius: 10%;
+    border-radius: 60px;
     border: 6px solid rgba(0, 0, 0, 0.4588235294);
   }
   .sobreMiBody #sobremi .sobremi {
@@ -1541,9 +1562,10 @@
   }
   .sobreMiBody #sobremi .sobremi #titulo-seccion {
     font-size: 2rem;
+    margin-top: 20px;
     font-weight: bolder;
     color: #ff5080;
-    text-shadow: 1px 1px 2px #000000;
+    text-shadow: 2px 2px 2px #000000;
   }
   .sobreMiBody #sobremi .sobremi h2 {
     font-size: 1.8rem;
@@ -1567,14 +1589,14 @@
     margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    color: #fff;
-    text-shadow: 1px 1px 2px #000000;
+    color: #ff5080;
+    text-shadow: 2px 2px 2px #000000;
   }
   .sobreMiBody #sobremi .sobremi .buttonDescargar {
     margin-top: 5px;
   }
   .sobreMiBody #sobremi .sobremi .buttonDescargar a {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.4588235294);
     text-decoration: none;
@@ -1631,7 +1653,7 @@
   .sobreMiBody #sobremi {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 35% 65%;
+    grid-template-rows: 40% 60%;
     grid-template-areas: "contenedorFoto" "sobremi";
     row-gap: 0;
     width: 100%;
@@ -1646,9 +1668,9 @@
     border-radius: 10%;
   }
   .sobreMiBody #sobremi .contenedor-foto img {
-    height: 80%;
+    height: 90%;
     width: 20%;
-    border-radius: 10%;
+    border-radius: 60px;
     border: 6px solid rgba(0, 0, 0, 0.4588235294);
   }
   .sobreMiBody #sobremi .sobremi {
@@ -1657,9 +1679,10 @@
   }
   .sobreMiBody #sobremi .sobremi #titulo-seccion {
     font-size: 2.2rem;
+    margin-top: 20px;
     font-weight: bolder;
     color: #ff5080;
-    text-shadow: 1px 1px 2px #000000;
+    text-shadow: 2px 2px 2px #000000;
   }
   .sobreMiBody #sobremi .sobremi h2 {
     font-size: 2rem;
@@ -1683,8 +1706,8 @@
     margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    color: #fff;
-    text-shadow: 1px 1px 2px #000000;
+    color: #ff5080;
+    text-shadow: 2px 2px 2px #000000;
   }
   .sobreMiBody #sobremi .sobremi .buttonDescargar {
     margin-top: 5px;
@@ -1763,7 +1786,7 @@
   margin-top: 5px;
   margin-bottom: 5px;
   grid-area: titulo;
-  text-shadow: 3px 3px 4px #ffffff;
+  text-shadow: 3px 3px 4px #000000;
 }
 .skillsBody #skills .lista {
   color: #ff5080;
@@ -1771,7 +1794,7 @@
   font-weight: bold;
   margin-top: 3px;
   margin-bottom: 3px;
-  text-shadow: 2px 2px 3px #ffffff;
+  text-shadow: 2px 2px 3px #000000;
 }
 .skillsBody #skills .porcentaje {
   color: #ff5080;
@@ -1779,7 +1802,7 @@
   font-weight: bold;
   margin-top: 3px;
   margin-bottom: 3px;
-  text-shadow: 2px 2px 3px #ffffff;
+  text-shadow: 2px 2px 3px #000000;
 }
 .skillsBody #skills #skill1 {
   text-align: center;
@@ -1887,7 +1910,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
     grid-area: titulo;
-    text-shadow: 3px 3px 4px #ffffff;
+    text-shadow: 3px 3px 4px #000000;
   }
   .skillsBody #skills .lista {
     color: #ff5080;
@@ -1895,7 +1918,7 @@
     font-weight: bold;
     margin-top: 3px;
     margin-bottom: 3px;
-    text-shadow: 2px 2px 3px #ffffff;
+    text-shadow: 2px 2px 3px #000000;
   }
   .skillsBody #skills .porcentaje {
     color: #ff5080;
@@ -1903,7 +1926,7 @@
     font-weight: bold;
     margin-top: 3px;
     margin-bottom: 3px;
-    text-shadow: 2px 2px 3px #ffffff;
+    text-shadow: 2px 2px 3px #000000;
   }
   .skillsBody #skills #skill1 {
     text-align: center;
@@ -2011,7 +2034,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
     grid-area: titulo;
-    text-shadow: 3px 3px 4px #ffffff;
+    text-shadow: 3px 3px 4px #000000;
   }
   .skillsBody #skills .lista {
     color: #ff5080;
@@ -2019,7 +2042,7 @@
     font-weight: bold;
     margin-top: 3px;
     margin-bottom: 3px;
-    text-shadow: 2px 2px 3px #ffffff;
+    text-shadow: 2px 2px 3px #000000;
   }
   .skillsBody #skills .porcentaje {
     color: #ff5080;
@@ -2027,7 +2050,7 @@
     font-weight: bold;
     margin-top: 3px;
     margin-bottom: 3px;
-    text-shadow: 2px 2px 3px #ffffff;
+    text-shadow: 2px 2px 3px #000000;
   }
   .skillsBody #skills #skill1 {
     text-align: center;
@@ -2135,7 +2158,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
     grid-area: titulo;
-    text-shadow: 3px 3px 4px #ffffff;
+    text-shadow: 3px 3px 4px #000000;
   }
   .skillsBody #skills .lista {
     color: #ff5080;
@@ -2143,7 +2166,7 @@
     font-weight: bold;
     margin-top: 3px;
     margin-bottom: 3px;
-    text-shadow: 2px 2px 3px #ffffff;
+    text-shadow: 2px 2px 3px #000000;
   }
   .skillsBody #skills .porcentaje {
     color: #ff5080;
@@ -2151,7 +2174,7 @@
     font-weight: bold;
     margin-top: 3px;
     margin-bottom: 3px;
-    text-shadow: 2px 2px 3px #ffffff;
+    text-shadow: 2px 2px 3px #000000;
   }
   .skillsBody #skills #skill1 {
     text-align: center;
@@ -2259,7 +2282,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
     grid-area: titulo;
-    text-shadow: 3px 3px 4px #ffffff;
+    text-shadow: 3px 3px 4px #000000;
   }
   .skillsBody #skills .lista {
     color: #ff5080;
@@ -2267,7 +2290,7 @@
     font-weight: bold;
     margin-top: 3px;
     margin-bottom: 3px;
-    text-shadow: 2px 2px 3px #ffffff;
+    text-shadow: 2px 2px 3px #000000;
   }
   .skillsBody #skills .porcentaje {
     color: #ff5080;
@@ -2275,7 +2298,7 @@
     font-weight: bold;
     margin-top: 3px;
     margin-bottom: 3px;
-    text-shadow: 2px 2px 3px #ffffff;
+    text-shadow: 2px 2px 3px #000000;
   }
   .skillsBody #skills #skill1 {
     text-align: center;
@@ -2383,7 +2406,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
     grid-area: titulo;
-    text-shadow: 3px 3px 4px #ffffff;
+    text-shadow: 3px 3px 4px #000000;
   }
   .skillsBody #skills .lista {
     color: #ff5080;
@@ -2391,7 +2414,7 @@
     font-weight: bold;
     margin-top: 3px;
     margin-bottom: 3px;
-    text-shadow: 2px 2px 3px #ffffff;
+    text-shadow: 2px 2px 3px #000000;
   }
   .skillsBody #skills .porcentaje {
     color: #ff5080;
@@ -2399,7 +2422,7 @@
     font-weight: bold;
     margin-top: 3px;
     margin-bottom: 3px;
-    text-shadow: 2px 2px 3px #ffffff;
+    text-shadow: 2px 2px 3px #000000;
   }
   .skillsBody #skills #skill1 {
     text-align: center;
@@ -2507,7 +2530,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
     grid-area: titulo;
-    text-shadow: 3px 3px 4px #ffffff;
+    text-shadow: 3px 3px 4px #000000;
   }
   .skillsBody #skills .lista {
     color: #ff5080;
@@ -2515,7 +2538,7 @@
     font-weight: bold;
     margin-top: 3px;
     margin-bottom: 3px;
-    text-shadow: 2px 2px 3px #ffffff;
+    text-shadow: 2px 2px 3px #000000;
   }
   .skillsBody #skills .porcentaje {
     color: #ff5080;
@@ -2523,7 +2546,7 @@
     font-weight: bold;
     margin-top: 3px;
     margin-bottom: 3px;
-    text-shadow: 2px 2px 3px #ffffff;
+    text-shadow: 2px 2px 3px #000000;
   }
   .skillsBody #skills #skill1 {
     text-align: center;
@@ -2631,7 +2654,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
     grid-area: titulo;
-    text-shadow: 3px 3px 4px #ffffff;
+    text-shadow: 3px 3px 4px #000000;
   }
   .skillsBody #skills .lista {
     color: #ff5080;
@@ -2639,7 +2662,7 @@
     font-weight: bold;
     margin-top: 3px;
     margin-bottom: 3px;
-    text-shadow: 2px 2px 3px #ffffff;
+    text-shadow: 2px 2px 3px #000000;
   }
   .skillsBody #skills .porcentaje {
     color: #ff5080;
@@ -2647,7 +2670,7 @@
     font-weight: bold;
     margin-top: 3px;
     margin-bottom: 3px;
-    text-shadow: 2px 2px 3px #ffffff;
+    text-shadow: 2px 2px 3px #000000;
   }
   .skillsBody #skills #skill1 {
     text-align: center;

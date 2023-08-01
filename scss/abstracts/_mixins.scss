@@ -330,8 +330,8 @@
     margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    color: #fff;
-    text-shadow: 1px 1px 2px #000000;
+    color: $primary-color;
+    text-shadow: 2px 2px 2px #000000;
 }
 @mixin h3 {
     font-weight: bold;
@@ -345,12 +345,13 @@
 }
 @mixin span {
     color: $primary-color;
-    text-shadow: 1px 1px 2px #000000;
+    text-shadow: 3px 3px 3px #000000;
 }
 @mixin titulo {
+    margin-top: 20px;
     font-weight: bolder;
     color: $primary-color;
-    text-shadow: 1px 1px 2px #000000;
+    text-shadow: 2px 2px 2px #000000;
 }
 @mixin contenedorFoto {
     grid-area: contenedorFoto;
@@ -364,25 +365,25 @@
 @mixin img {
     height: 60%;
     width: 50%;
-    border-radius: 10%;
+    border-radius: 60px;
     border: 6px solid $secondary-color;
 }
 @mixin imgTablet {
     height: 80%;
     width: 30%;
-    border-radius: 10%;
+    border-radius: 60px;
     border: 6px solid $secondary-color;
 }
 @mixin imgDesktop {
-    height: 80%;
+    height: 90%;
     width: 20%;
-    border-radius: 10%;
+    border-radius: 60px;
     border: 6px solid $secondary-color;
 }
 @mixin display {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 35% 65%;
+    grid-template-rows: 40% 60%;
     grid-template-areas:
     "contenedorFoto"
     "sobremi";
@@ -421,7 +422,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
     grid-area: titulo;
-    text-shadow: 3px 3px 4px #ffffff;
+    text-shadow: 3px 3px 4px #000000;
 }
 @mixin listaSkill($fontSizeSkill) {
     color: $primary-color;
@@ -429,7 +430,7 @@
     font-weight: bold;
     margin-top: 3px;
     margin-bottom: 3px;
-    text-shadow: 2px 2px 3px #ffffff;
+    text-shadow: 2px 2px 3px #000000;
 }
 @mixin porcentajeSkill($fontSizeSkill) {
     color: $primary-color;
@@ -437,7 +438,7 @@
     font-weight: bold;
     margin-top: 3px;
     margin-bottom: 3px;
-    text-shadow: 2px 2px 3px #ffffff;
+    text-shadow: 2px 2px 3px #000000;
 }
 @mixin skill {
     text-align: center;

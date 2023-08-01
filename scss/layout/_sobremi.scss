@@ -320,11 +320,10 @@
                         font-size: 1.3rem;
                         @include botonDescargarA;
 
-                        .descargar {
-                            &:hover {
+                        .descargar:hover {
                                 @include botonDescargarHover;
-                            }
                         }
+                        
                     }
                 }
             }
@@ -381,14 +380,13 @@
                     margin-top: 5px;
 
                     a {
-                        font-size: 1.6rem;
+                        font-size: 1.3rem;
                         @include botonDescargarA;
 
-                        .descargar {
-                            &:hover {
+                        .descargar:hover {
                                 @include botonDescargarHover;
-                            }
                         }
+                        
                     }
                 }
             }
